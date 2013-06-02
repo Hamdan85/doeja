@@ -1,6 +1,12 @@
 Doeja::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
+  # Add the fonts path
+  config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
+
+# Precompile additional assets
+  config.assets.precompile += %w( .svg .eot .woff .ttf )
+
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
@@ -33,5 +39,5 @@ Doeja::Application.configure do
   config.assets.compress = false
 
   # Expands the lines which load the assets
-  config.assets.debug = true
+  config.assets.debug = false
 end

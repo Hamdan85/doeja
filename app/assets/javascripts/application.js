@@ -12,4 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
+//= require classie
+//= require formToWizard
+//= require modernizr.custom
+//= require tags
+//= require viewscript
