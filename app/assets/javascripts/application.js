@@ -17,3 +17,4 @@
 //= require modernizr.custom
 //= require tags
 //= require viewscript
+//= require analytics

@@ -1,7 +1,9 @@
 class Receiver < ActiveRecord::Base
-  attr_accessible :city, :description, :email, :howweuse, :kind, :name, :neighborhood, :number, :phone, :receiving, :street
+  attr_accessible :address, :city, :description, :email, :howweuse, :kind, :name,
+                  :neighborhood, :number, :phone, :receiving, :street,
+                  :latitude, :longitude, :gmaps
 
-  geocoded_by :complete_address
+  geocoded_by :address
   after_validation :geocode          # auto-fetch coordinates
 
   reverse_geocoded_by :latitude, :longitude
@@ -13,7 +15,7 @@ class Receiver < ActiveRecord::Base
     address
   end
 
-  def complete_address
+  def address
     [street, number, neighborhood].compact.join(', ')
   end
 end

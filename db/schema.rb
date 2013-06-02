@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130602194216) do
+ActiveRecord::Schema.define(:version => 20130602210906) do
 
   create_table "receivers", :force => true do |t|
     t.string   "kind"
