@@ -21,8 +21,12 @@
 
 <%= yield %>
 
+<section style="height:99%;">
+  <%= gmaps(:map_options => {:detect_location => true, :center_on_user => true, :zoom => 12 }, :markers => {:data => @json} ) %>
+</section>
 
 <%= javascript_include_tag "application" %>
+<%= yield :scripts %>
 </body>
 </html>
 

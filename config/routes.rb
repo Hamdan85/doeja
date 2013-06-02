@@ -1,7 +1,10 @@
 Doeja::Application.routes.draw do
   root :to => "inicial#index"
 
-  resources :receiver
+
+
+  #resources :receiver
+  resources :inicial
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

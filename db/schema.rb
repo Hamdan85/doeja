@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130602040344) do
+ActiveRecord::Schema.define(:version => 20130602194216) do
 
   create_table "receivers", :force => true do |t|
     t.string   "kind"
@@ -27,6 +27,10 @@ ActiveRecord::Schema.define(:version => 20130602040344) do
     t.string   "email"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
+    t.float    "latitude"
+    t.float    "longitude"
+    t.boolean  "gmaps"
+    t.string   "address"
   end
 
 end
