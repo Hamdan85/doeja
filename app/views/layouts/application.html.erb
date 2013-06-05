@@ -9,13 +9,25 @@
 </head>
 <body>
 
-<%= yield %>
+    <%= gmaps(:map_options => {
+            :raw => '{
+                           panControl: false,
+                           zoomControl: false,
+                           mapTypeControl: false,
+                           scaleControl: false,
+                           streetViewControl: false,
+                           overviewMapControl: false,
+                           styles: mystyles
+                    }',
 
+            :detect_location => true, :center_on_user => true, :zoom => 8 }, :markers => {:data => @json} ) %>
 
-<%= gmaps4rails(@json) %>
+    <%= yield %>
 
-<%= yield :scripts %>
-<%= javascript_include_tag "application" %>
+    <%= javascript_include_tag "application" %>
+
+    <%= yield :scripts %>
+
 </body>
 </html>
 

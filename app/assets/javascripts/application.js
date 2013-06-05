@@ -12,9 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require_tree ./gmaps4rails
 //= require classie
 //= require formToWizard
 //= require modernizr.custom
 //= require tags
 //= require viewscript
-//= require analytics
+//= require gmapsvar
+//= require_tree .
