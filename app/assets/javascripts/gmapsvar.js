@@ -3,46 +3,55 @@ var mystyles = [
         featureType: 'water',
         elementType: 'all',
         stylers: [
-            { hue: '#4C9CF1' },
-            { saturation: 74 },
-            { lightness: -18 },
-            { visibility: 'on' }
-        ]
-    },{
-        featureType: 'landscape',
-        elementType: 'all',
-        stylers: [
-            { hue: '#ffffff' },
-            { saturation: -100 },
-            { lightness: 100 },
-            { visibility: 'on' }
+            { hue: '#79a3fa' },
+            { saturation: 87 },
+            { lightness: -4 },
+            { visibility: 'simplified' }
         ]
     },{
         featureType: 'road',
         elementType: 'all',
         stylers: [
-            { hue: '#258ecd' },
-            { saturation: -31 },
-            { lightness: -26 },
+
+        ]
+    },{
+        featureType: 'landscape.natural',
+        elementType: 'all',
+        stylers: [
+            { hue: '#e8e9ef' },
+            { saturation: 3 },
+            { lightness: -3 },
             { visibility: 'on' }
         ]
     },{
-        featureType: 'landscape.man_made',
+        featureType: 'poi',
         elementType: 'all',
         stylers: [
-            { hue: '#ffffff' },
+            { hue: '#cccccc' },
             { saturation: -100 },
-            { lightness: 100 },
-            { visibility: 'on' }
+            { lightness: 9 },
+            { visibility: 'simplified' }
         ]
     },{
-        featureType: 'road.local',
+        featureType: 'transit',
         elementType: 'all',
         stylers: [
-            { hue: '#0d77b6' },
-            { saturation: -13 },
-            { lightness: -62 },
-            { visibility: 'on' }
+            { hue: '#b8babc' },
+            { saturation: 3 },
+            { lightness: -3 },
+            { visibility: 'simplified' }
+        ]
+    },{
+        featureType: 'administrative',
+        elementType: 'all',
+        stylers: [
+
+        ]
+    },{
+        featureType: 'road.arterial',
+        elementType: 'all',
+        stylers: [
+
         ]
     }
 ];
@@ -50,8 +59,8 @@ var options = {
     mapTypeControlOptions: {
         mapTypeIds: [ 'Styled']
     },
-    center: new google.maps.LatLng(-19.92573152776731, -43.94514908790586),
-    zoom: 15,
+    center: new google.maps.LatLng(-19.928293492248798, -43.96447708606722),
+    zoom: 14,
     mapTypeId: 'Styled'
 };
 var div = document.getElementById('map');
