@@ -1,25 +1,8 @@
 <header id="header">
 </header>
 <a href="#" id="sumir" class="logo2"><img id="img-rez" src="/assets/doeja-logo.png" alt="logo" /></a><body class="cbp-spmenu-push">
-<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
-  <h3>DOAR</h3>
-  <div id="seta" class="back-icon-div"><a href="#" class="back-icon" id="back-doar"></a></div>
-  <form>
-    <label>ONDE VOCÊ ESTÁ?</label>
-    <label class="esq" style="font-size:0.8em;">Descobrir Automaticamente?</label>
-    <input style="float:right; margin:-24px -70px 0 0; height:13px;" type="checkbox"><br />
-    <small id="exemplo">Usamos Geolocalização do Google</small>
-    <input class="esq" type="text" placeholder="Cidade"><br />
-    <input class="esq" type="text" placeholder="Rua"><br />
-    <input class="esq" type="text" name="doar" style="width:60%;" placeholder="Bairro"><input style="width:20%;" type="text" placeholder="N°"><br />
 
-    <label>O QUE QUER DOAR?</label>
-    <input class="tags" type="text"><br />
-    <small class="exemplo1">Ex: Roupas, dinheiro, amor...</small>
-    <input class="botao" type="submit" value="DOAR">
-
-  </form>
-</nav>
+<%= render '/shared/donate' %>
 
 <%= render '/shared/receive' %>
 
