@@ -18,4 +18,17 @@ class InicialController < ApplicationController
     redirect_to root_path
     puts params[:receiver]
   end
+
+  def searchlocal
+    @json = Receiver.all.to_gmaps4rails do |address, marker|
+
+        puts :city
+        marker.infowindow render_to_string(:partial => "/shared/mapbox", :locals => { :address => address })
+        marker.title
+        marker.json(address)
+      end
+    end
+  end
+
+
 end

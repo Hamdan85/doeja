@@ -20,7 +20,10 @@
                            styles: mystyles
                     }',
 
-            :detect_location => true, :center_on_user => true, :zoom => 8 }, :markers => {:data => @json} ) %>
+            :detect_location => false,
+            :center_on_user => false,
+            :zoom => 8 },
+            :markers => {:data => @json} ) %>
 
     <%= yield %>
 
