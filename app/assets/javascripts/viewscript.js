@@ -8,7 +8,7 @@ $(".tag-tipo").magicSuggest({
     emptyTextCls: 'customEmptyTextCls',
     typeDelay: 0,
     maxEntryRenderer: 'Por favor escolha somente um',
-    data: 'Instituição, Pessoa, Barzinho, Empreendedor, Amigo'
+        data: 'Instituição, Pessoa, Barzinho, Empreendedor, Amigo'
 });
 
 $(".tags").magicSuggest({
@@ -133,5 +133,33 @@ seta1.onclick = function(){
 
 $('.esq').bind("keydown", doeJa);
 $('.dir').bind("keydown", registre);
+
+var fulladdress;
+var City = "";
+var Street = "";
+var Number = "";
+var Neighborhood = "";
+
+/* trigger mudança de campo. */
+$('#esq-1').change(function(){
+    City = document.getElementById('esq-1').value;
+    fulladdress = Street + ', ' + Number + ', ' + Neighborhood + ', ' + City;
+    getMapByGeoLocation(fulladdress);
+});
+$('#esq-2').change(function(){
+    Street = document.getElementById('esq-2').value;
+    fulladdress = Street + ', ' + Number + ', ' + Neighborhood + ', ' + City;
+    getMapByGeoLocation(fulladdress);
+});
+$('#esq-3').change(function(){
+    Neighborhood = document.getElementById('esq-3').value;
+    fulladdress = Street + ', ' + Number + ', ' + Neighborhood + ', ' + City;
+    getMapByGeoLocation(fulladdress);
+});
+$('#esq-4').change(function(){
+    Number = document.getElementById('esq-4').value;
+    fulladdress = Street + ', ' + Number + ', ' + Neighborhood + ', ' + City;
+    getMapByGeoLocation(fulladdress);
+});
 
 $("#registro").formToWizard();

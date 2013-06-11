@@ -9,21 +9,7 @@
 </head>
 <body>
 
-    <%= gmaps(:map_options => {
-            :raw => '{
-                           panControl: false,
-                           zoomControl: false,
-                           mapTypeControl: false,
-                           scaleControl: false,
-                           streetViewControl: false,
-                           overviewMapControl: false,
-                           styles: mystyles
-                    }',
-
-            :detect_location => false,
-            :center_on_user => false,
-            :zoom => 8 },
-            :markers => {:data => @json} ) %>
+    <%= render 'shared/map' %>
 
     <%= yield %>
 

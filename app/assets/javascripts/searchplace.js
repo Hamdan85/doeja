@@ -1,33 +1,20 @@
-function getMapByGeoLocation() {
-    //build the address using many fields.
-    var city = $("#city").val();
-    var street = $("#street").val();
-    var neigborhood = $("#neighborhood").val();
-    var number = $("#number").val();
+function getMapByGeoLocation(address) {
+    var geocoder = new google.maps.Geocoder();
+    var lat = "";
+    var lng = "";
+    geocoder.geocode( { 'address': address, 'region': 'br' }, function(results, status) {
+        if (status == google.maps.GeocoderStatus.OK) {
+            lat = results[0].geometry.location.lat();
+            lng = results[0].geometry.location.lng();
+        } else {
+            result = "Unable to find address: " + status;
+        }
 
-    var fulladdress = street + ', ' + number + ', ' + neigborhood + ', ' + city;
+        setTimeout(function() {
+            //var bounds = new google.maps.LatLngBounds(new google.maps.LatLng(lat, lng),new google.maps.LatLng(lat, lng));
+            Gmaps.map.serviceObject.setCenter(new google.maps.LatLng(lat, lng));
+        }, 50);
 
-    geocoder.geocode(
-        {
-            'address': fulladdress
-        },
-        function (results, status) {
-            if (status == google.maps.GeocoderStatus.OK) {
-                var location = results[0].geometry.location;
-                console.log(location);
-                //map and marker should be previously created
-                map.setCenter(location);
-                map.setZoom(14);
-                marker.setPosition(location);
-
-                //These 2 hidden inputs will be posted to the server
-                $("#HotelLatitude").val(location.Ya);
-                $("#HotelLongitude").val(location.Za);
-
-            } else {
-                alert("Geocode was not successful for the following reason: " + status);
-            }
-        });
+    });
 }
 
-$("#city, #street, #neighborhood, #number").change(getMapByGeoLocation);

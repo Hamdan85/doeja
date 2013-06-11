@@ -1,0 +1,15 @@
+<%= gmaps(:map_options => {
+        :raw => '{
+                           panControl: false,
+                           zoomControl: true,
+                           mapTypeControl: false,
+                           scaleControl: false,
+                           streetViewControl: false,
+                           overviewMapControl: false,
+                           styles: mystyles
+                    }',
+
+        :detect_location => false,
+        :center_on_user => false,
+        :zoom => 20 },
+        :markers => {:data => @json} ) %>

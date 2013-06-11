@@ -1,16 +1,16 @@
 <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
   <h3>DOAR</h3>
   <div id="seta" class="back-icon-div"><a href="#" class="back-icon" id="back-doar"></a></div>
-  <%= form_for(:receiver, :url => { :action => 'searchlocal', :controller => :inicial, :method => :post } ) do |f| %> <!-- <form id="registro"> -->
+  <%= form_for(:receiver, :url => { :action => 'searchlocal', :controller => :inicial, :method => :get } ) do |f| %> <!-- <form id="registro"> -->
     <label>ONDE VOCÊ ESTÁ?</label>
     <!--<label class="esq" style="font-size:0.8em;">Descobrir Automaticamente?</label>
     <input style="float:right; margin:-24px -70px 0 0; height:13px;" type="checkbox"><br />
     <small id="exemplo">Usamos Geolocalização do Google</small>-->
 
-    <%= f.text_field :city, :class => 'esq', :placeholder => 'Cidade', :"data-field" => "city" %><!--<input class="esq" type="text" placeholder="Cidade">--><br />
-    <%= f.text_field :street, :class => 'esq', :placeholder => 'Rua', :"data-field" => "street" %><!--<input class="esq" type="text" placeholder="Rua">--><br />
-    <%= f.text_field :neighborhood, :class => 'esq', :placeholder => 'Bairro', :style => "width:60%;", :"data-field" => "neighborhood" %><!--<input class="esq" type="text" name="doar" style="width:60%;" placeholder="Bairro">-->
-    <%= f.text_field :number, :class => 'esq', :placeholder => 'N°', :style => "width:18%;", :"data-field" => "number" %><!--<input style="width:20%;" type="text" placeholder="N°">--><br />
+    <%= f.text_field :city, :class => 'esq', :id => 'esq-1', :placeholder => 'Cidade', :"data-field" => "city" %><!--<input class="esq" type="text" placeholder="Cidade">--><br />
+    <%= f.text_field :street, :class => 'esq', :id => 'esq-2', :placeholder => 'Rua', :"data-field" => "street" %><!--<input class="esq" type="text" placeholder="Rua">--><br />
+    <%= f.text_field :neighborhood, :class => 'esq', :id => 'esq-3', :placeholder => 'Bairro', :style => "width:60%;", :"data-field" => "neighborhood" %><!--<input class="esq" type="text" name="doar" style="width:60%;" placeholder="Bairro">-->
+    <%= f.text_field :number, :class => 'esq', :id => 'esq-4', :placeholder => 'N°', :style => "width:18%;", :"data-field" => "number" %><!--<input style="width:20%;" type="text" placeholder="N°">--><br />
 
     <label>O QUE QUER DOAR?</label>
     <input class="tags" type="text"><br />

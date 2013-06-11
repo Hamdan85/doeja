@@ -1,4 +1,7 @@
 class InicialController < ApplicationController
+
+  respond_to :json, :html
+
   def index
     @json = Receiver.all.to_gmaps4rails do |address, marker|
       marker.infowindow render_to_string(:partial => "/shared/mapbox", :locals => { :address => address})
@@ -14,21 +17,20 @@ class InicialController < ApplicationController
   def create
     @Receiver = Receiver.new(params[:receiver])
     @Receiver.save
-    puts :complete_address
     redirect_to root_path
     puts params[:receiver]
   end
 
   def searchlocal
     @json = Receiver.all.to_gmaps4rails do |address, marker|
-
-        puts :city
         marker.infowindow render_to_string(:partial => "/shared/mapbox", :locals => { :address => address })
         marker.title
         marker.json(address)
-      end
     end
-  end
 
-
+    respond_to do |format|
+      format.html
+      format.json {render json:@json}
+    end
+   end
 end
