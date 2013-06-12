@@ -13,6 +13,7 @@ function getMapByGeoLocation(address) {
         setTimeout(function() {
             //var bounds = new google.maps.LatLngBounds(new google.maps.LatLng(lat, lng),new google.maps.LatLng(lat, lng));
             Gmaps.map.serviceObject.setCenter(new google.maps.LatLng(lat, lng));
+            Gmaps.map.centerAndZoom(new google.maps.LatLng(lat, lng), 0)
         }, 50);
 
     });

@@ -1,7 +1,7 @@
 <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
   <h3>DOAR</h3>
   <div id="seta" class="back-icon-div"><a href="#" class="back-icon" id="back-doar"></a></div>
-  <%= form_for(:receiver, :url => { :action => 'searchlocal', :controller => :inicial, :method => :get } ) do |f| %> <!-- <form id="registro"> -->
+  <%= form_for(:receiver, :url => { :action => 'searchlocal', :controller => :inicial, :method => :get }, :remote => true ) do |f| %> <!-- <form id="registro"> -->
     <label>ONDE VOCÊ ESTÁ?</label>
     <!--<label class="esq" style="font-size:0.8em;">Descobrir Automaticamente?</label>
     <input style="float:right; margin:-24px -70px 0 0; height:13px;" type="checkbox"><br />

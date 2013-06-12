@@ -19,5 +19,5 @@
 //= require tags
 //= require viewscript
 //= require gmapsvar
-//= require searchplace
+//= require centerplace
 //= require_tree .
