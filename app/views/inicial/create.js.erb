@@ -1,0 +1,14 @@
+classie.toggle( showRightPush, 'active' );
+classie.toggle( body, 'cbp-spmenu-push-toleft' );
+classie.toggle( menuRight, 'cbp-spmenu-open' );
+
+disableOther( 'showRightPush' );
+
+classie.removeClass( sumir, 'move1');
+classie.removeClass( infobox, 'sumir');
+classie.removeClass( header, 'header1');
+
+
+<% if flash[:notice] %>
+flash_notice('<%= escape_javascript(@Receiver.name) %>');
+<% end %>

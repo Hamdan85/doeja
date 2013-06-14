@@ -11,8 +11,19 @@ class InicialController < ApplicationController
 
   def create
     @Receiver = Receiver.new(params[:receiver])
-    @Receiver.save
-    redirect_to root_path
+    @Receiver.save!
+
+    respond_to do |format|
+      if @Receiver.save
+        format.html { redirect_to(@Receiver, :notice => 'Feito!')}
+        format.js
+      else
+        format.html { redirect_to(@Receiver, :notice => 'Erro!', )}
+        format.js
+      end
+    end
+
+
   end
 
   def searchlocal
@@ -27,6 +38,10 @@ class InicialController < ApplicationController
         marker.json(address)
     end
 
-    respond_to @json
-   end
+    respond_to do |format|
+      format.html { redirect_to(@json) }
+      format.js
+
+    end
+  end
 end
