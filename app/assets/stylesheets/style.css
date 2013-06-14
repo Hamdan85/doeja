@@ -491,3 +491,16 @@ select{
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
+
+#flash_notice {
+    width:400px;
+    padding:10px;
+    background:#dbffca;
+    color:#060;
+    height:30px;
+    line-height:30px;
+    border:1px solid #060;
+    font-family:arial, helvetica, sans-serif;
+    font-size:12pt;
+    margin-top:30px;
+}

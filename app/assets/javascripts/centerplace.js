@@ -10,10 +10,19 @@ function getMapByGeoLocation(address) {
             result = "Unable to find address: " + status;
         }
 
+
         setTimeout(function() {
             //var bounds = new google.maps.LatLngBounds(new google.maps.LatLng(lat, lng),new google.maps.LatLng(lat, lng));
             Gmaps.map.serviceObject.setCenter(new google.maps.LatLng(lat, lng));
-            Gmaps.map.centerAndZoom(new google.maps.LatLng(lat, lng), 0)
+
+            Gmaps.map.clearMarkers();
+
+            Gmaps.map.createMarker({
+                Lat: lat,
+                Lng: lng,
+                rich_marker: null,
+                marker_picture: ""
+            });
         }, 50);
 
     });
