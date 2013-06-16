@@ -20,11 +20,17 @@ function getMapByGeoLocation(address) {
             Gmaps.map.createMarker({
                 Lat: lat,
                 Lng: lng,
+                draggable: true,
                 rich_marker: null,
                 marker_picture: ""
             });
+
+            Gmaps.map.serviceObject.getZoom()
         }, 50);
 
     });
 }
 
+function addMarkers(markers) {
+    Gmaps.map.addMarkers(markers);
+}

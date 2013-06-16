@@ -8,7 +8,4 @@ classie.removeClass( sumir, 'move1');
 classie.removeClass( infobox, 'sumir');
 classie.removeClass( header, 'header1');
 
-
-<% if flash[:notice] %>
-flash_notice('<%= escape_javascript(@Receiver.name) %>');
-<% end %>
+flash_notice('<%= escape_javascript(@notice) %>');

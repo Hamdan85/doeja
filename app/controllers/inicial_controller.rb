@@ -15,10 +15,12 @@ class InicialController < ApplicationController
 
     respond_to do |format|
       if @Receiver.save
-        format.html { redirect_to(@Receiver, :notice => 'Feito!')}
+        @notice = 'Local salvo com sucesso. Muito Obrigado!!'
+        format.html
         format.js
       else
-        format.html { redirect_to(@Receiver, :notice => 'Erro!', )}
+        @notice = 'Erro!!'
+        format.html
         format.js
       end
     end
@@ -37,6 +39,8 @@ class InicialController < ApplicationController
         marker.title
         marker.json(address)
     end
+
+    puts(@json)
 
     respond_to do |format|
       format.html { redirect_to(@json) }

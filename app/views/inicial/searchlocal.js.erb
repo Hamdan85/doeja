@@ -1,3 +1,4 @@
-Gmaps.map.addMarkers(<%= json_escape(@json) %>);
 Gmaps.map.adjustMapToBounds();
-getMapByGeoLocation(fulladdress);
+
+var message = <%=raw escape_javascript(@json) %>;
+addMarkers(message);
