@@ -30,22 +30,16 @@ class InicialController < ApplicationController
 
   def searchlocal
 
-    #puts 'okokokokokokok'
-    #puts params[receiver.first]
-    #@preload = Receiver.find_by_city(params[receiver.city])
+    puts @Donate
 
-    @json = Receiver.all.to_gmaps4rails do |address, marker|
-        marker.infowindow render_to_string(:partial => "/shared/mapbox", :locals => { :address => address })
-        marker.title
-        marker.json(address)
-    end
+    puts 'oioioi'
 
-    puts(@json)
+    @locals = Receiver.find_all_by_receiving(params[@Donate])
 
     respond_to do |format|
-      format.html { redirect_to(@json) }
+      format.html { render :nothing => true }
       format.js
-
     end
+
   end
 end

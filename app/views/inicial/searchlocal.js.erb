@@ -1,4 +1,3 @@
-Gmaps.map.adjustMapToBounds();
 
-var message = <%=raw escape_javascript(@json) %>;
-addMarkers(message);
+alert('<%= escape_javascript(@locals) %>');
+addMarkers(<%= escape_javascript(@locals) %>);
