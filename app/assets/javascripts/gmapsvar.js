@@ -8,13 +8,15 @@ var mystyles = [
             { lightness: -4 },
             { visibility: 'simplified' }
         ]
-    },{
+    },
+    {
         featureType: 'road',
         elementType: 'all',
         stylers: [
 
         ]
-    },{
+    },
+    {
         featureType: 'landscape.natural',
         elementType: 'all',
         stylers: [
@@ -23,7 +25,8 @@ var mystyles = [
             { lightness: -3 },
             { visibility: 'on' }
         ]
-    },{
+    },
+    {
         featureType: 'poi',
         elementType: 'all',
         stylers: [
@@ -32,7 +35,8 @@ var mystyles = [
             { lightness: 9 },
             { visibility: 'simplified' }
         ]
-    },{
+    },
+    {
         featureType: 'transit',
         elementType: 'all',
         stylers: [
@@ -41,13 +45,15 @@ var mystyles = [
             { lightness: -3 },
             { visibility: 'simplified' }
         ]
-    },{
+    },
+    {
         featureType: 'administrative',
         elementType: 'all',
         stylers: [
 
         ]
-    },{
+    },
+    {
         featureType: 'road.arterial',
         elementType: 'all',
         stylers: [

@@ -1,3 +1,5 @@
+<% if !@alert.nil? %>
+    flash_notice('<%= escape_javascript(@alert) %>');
+<% end %>
 
-alert('<%= escape_javascript(@locals) %>');
-addMarkers(<%= escape_javascript(@locals) %>);
+
