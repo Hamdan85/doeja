@@ -30,7 +30,7 @@ class InicialController < ApplicationController
 
   def searchlocal
 
-    @receiving2 = Receiver.where("receiving =? and city = ?", params[:Donate][:receiving],params[:Donate][:city]).to_gmaps4rails do |address, marker|
+    @receiving2 = Receiver.where("receiving =? and city = ?", params[:Donate][:receiving].downcase,params[:Donate][:city]).to_gmaps4rails do |address, marker|
       marker.infowindow render_to_string(:partial => "/shared/mapbox", :locals => { :address => address })
       marker.json(address)
     end

@@ -144,43 +144,43 @@ var Neighborhood = "";
 $('#esq-1').change(function(){
     City = document.getElementById('esq-1').value;
     fulladdress = Street + ', ' + Number + ', ' + Neighborhood + ', ' + City;
-    getMapByGeoLocation(fulladdress);
+    getMapByGeoLocation(fulladdress.toLowerCase());
 });
 $('#esq-2').change(function(){
     Street = document.getElementById('esq-2').value;
     fulladdress = Street + ', ' + Number + ', ' + Neighborhood + ', ' + City;
-    getMapByGeoLocation(fulladdress);
+    getMapByGeoLocation(fulladdress.toLowerCase());
 });
 $('#esq-3').change(function(){
     Neighborhood = document.getElementById('esq-3').value;
     fulladdress = Street + ', ' + Number + ', ' + Neighborhood + ', ' + City;
-    getMapByGeoLocation(fulladdress);
+    getMapByGeoLocation(fulladdress.toLowerCase());
 });
 $('#esq-4').change(function(){
     Number = document.getElementById('esq-4').value;
     fulladdress = Street + ', ' + Number + ', ' + Neighborhood + ', ' + City;
-    getMapByGeoLocation(fulladdress);
+    getMapByGeoLocation(fulladdress.toLowerCase());
 });
 
 $('#dir-1').change(function(){
     City = document.getElementById('dir-1').value;
     fulladdress = Street + ', ' + Number + ', ' + Neighborhood + ', ' + City;
-    getMapByGeoLocation(fulladdress);
+    getMapByGeoLocation(fulladdress.toLowerCase());
 });
 $('#dir-2').change(function(){
     Street = document.getElementById('dir-2').value;
     fulladdress = Street + ', ' + Number + ', ' + Neighborhood + ', ' + City;
-    getMapByGeoLocation(fulladdress);
+    getMapByGeoLocation(fulladdress.toLowerCase());
 });
 $('#dir-3').change(function(){
     Neighborhood = document.getElementById('dir-3').value;
     fulladdress = Street + ', ' + Number + ', ' + Neighborhood + ', ' + City;
-    getMapByGeoLocation(fulladdress);
+    getMapByGeoLocation(fulladdress.toLowerCase());
 });
 $('#dir-4').change(function(){
     Number = document.getElementById('dir-4').value;
     fulladdress = Street + ', ' + Number + ', ' + Neighborhood + ', ' + City;
-    getMapByGeoLocation(fulladdress);
+    getMapByGeoLocation(fulladdress.toLowerCase());
 });
 
 

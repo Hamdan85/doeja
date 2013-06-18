@@ -3,6 +3,17 @@ class Receiver < ActiveRecord::Base
                   :neighborhood, :number, :phone, :receiving, :street,
                   :latitude, :longitude, :gmaps
 
+  before_save :adjustdatabase
+
+  def adjustdatabase
+    self.city = self.city.downcase
+    self.street = self.street.downcase
+    self.kind = self.kind.downcase
+    self.neighborhood = self.neighborhood.downcase
+    self.receiving = self.receiving.downcase
+  end
+
+
   geocoded_by :address
   after_validation :geocode          # auto-fetch coordinates
 
