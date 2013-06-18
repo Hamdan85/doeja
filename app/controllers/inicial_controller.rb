@@ -32,19 +32,17 @@ class InicialController < ApplicationController
 
     @receiving2 = Receiver.where("receiving =? and city = ?", params[:Donate][:receiving],params[:Donate][:city]).to_gmaps4rails do |address, marker|
       marker.infowindow render_to_string(:partial => "/shared/mapbox", :locals => { :address => address })
-      marker.title 'Gabriel fodao'
       marker.json(address)
     end
 
-    respond_to do |format|
-      format.html { render :nothing => true }
-      format.json { render json: @receiving2 }
-    end
-
-    puts @receiving2
-
     if @receiving2 == '[]'
       @alert = 'Desculpe! Sem entradas para o pesquisado!'
+    end
+
+    respond_to do |format|
+      format.json { render json: @receiving2 }
+      puts @receiving2
+      format.js
     end
   end
 end

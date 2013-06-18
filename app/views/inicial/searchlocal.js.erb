@@ -2,4 +2,24 @@
     flash_notice('<%= escape_javascript(@alert) %>');
 <% end %>
 
+Gmaps.map.listen_to_markers = function(markers){
+    for(var i = 0; i < markers.length; i++){
+        marker = markers[i];
+        google.maps.event.addListener(marker.serviceObject, 'click',
+                (function(marker){
+                    return function(){
 
+                    }
+                })(marker)
+        )
+    }
+}
+
+Gmaps.map.callback = function(){
+    Gmaps.map.listen_to_markers(Gmaps.map.markers);
+}
+
+var new_markers = <%= raw @receiving2  %>;
+Gmaps.map.replaceMarkers(new_markers);
+Gmaps.map.listen_to_markers(new_markers);
+Gmaps.map.serviceObject.getZoom();

@@ -30,7 +30,3 @@ function getMapByGeoLocation(address) {
 
     });
 }
-
-function addMarkers(markers) {
-    Gmaps.map.addMarkers(markers);
-}

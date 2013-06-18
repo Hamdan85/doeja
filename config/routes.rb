@@ -5,11 +5,11 @@ Doeja::Application.routes.draw do
 
   resources :inicial do
     collection do
-      get 'searchlocal'
+      get 'procura'
     end
   end
 
-  match '/inicial/searchlocal' => 'inicial#searchlocal'
+  match '/procura' => 'inicial#searchlocal'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
