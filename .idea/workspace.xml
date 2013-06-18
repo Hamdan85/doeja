@@ -2,31 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/viewscript.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/viewscript.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/inicial_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/inicial_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/inicial/searchlocal.js.erb" afterPath="$PROJECT_DIR$/app/views/inicial/searchlocal.js.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/searchplace.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/searchplace.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="doeja.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1370929827324" ignored="false" />
-    <file path="/routes.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1370573900880" ignored="false" />
+    <file path="/Dummy.txt" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371518139897" ignored="false" />
+    <file path="/routes.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371521340507" ignored="false" />
     <file path="/index.html.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1370490478414" ignored="false" />
     <file path="/development.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1370143162636" ignored="false" />
     <file path="/a.dummy" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1370143202172" ignored="false" />
-    <file path="/_receive.html.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1370206878243" ignored="false" />
-    <file path="/inicial_controller.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1370917541978" ignored="false" />
+    <file path="/_receive.html.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371183016851" ignored="false" />
+    <file path="/inicial_controller.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371521059947" ignored="false" />
     <file path="/receiver_controller.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1370198177067" ignored="false" />
     <file path="/receiver.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1370209841897" ignored="false" />
     <file path="/geocoder.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1370410771257" ignored="false" />
-    <file path="/application.html.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1370911815383" ignored="false" />
+    <file path="/application.html.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371176881680" ignored="false" />
     <file path="$PROJECT_DIR$/../doeja 2/app/views/layouts/application.html.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1370406487594" ignored="false" />
     <file path="/gmaps4rails.css" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1370929506296" ignored="false" />
-    <file path="/style.css" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1370409142725" ignored="false" />
-    <file path="/gmapsvar.js" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1370479291531" ignored="false" />
-    <file path="/searchplace.js" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1370928272110" ignored="false" />
-    <file path="/_donate.html.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1370919377120" ignored="false" />
-    <file path="/_mapbox.html.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1370915615449" ignored="false" />
-    <file path="/_map.html.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1370929202626" ignored="false" />
+    <file path="/style.css" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371351126111" ignored="false" />
+    <file path="/gmapsvar.js" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371514915177" ignored="false" />
+    <file path="/searchplace.js" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371514449944" ignored="false" />
+    <file path="/_donate.html.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371508039085" ignored="false" />
+    <file path="/_mapbox.html.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371516994626" ignored="false" />
+    <file path="/_map.html.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371515095246" ignored="false" />
     <file path="/viewscript.js" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1370928860393" ignored="false" />
+    <file path="$PROJECT_DIR$/../gmapsexample/Gemfile" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371008524827" ignored="false" />
+    <file path="/fla_not.js.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371179166668" ignored="false" />
+    <file path="/flash_notice.js" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371349773666" ignored="false" />
+    <file path="/create.js.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371350786644" ignored="false" />
+    <file path="/searchlocal.js.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371523502494" ignored="false" />
+    <file path="/centerplace.js" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371350338577" ignored="false" />
+    <file path="$PROJECT_DIR$/db/schema.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371523297279" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,28 +56,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_donate.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/shared/_donate.html.erb">
+      <file leaf-file-name="searchplace.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/searchplace.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="60" selection-start="1280" selection-end="1280" vertical-scroll-proportion="0.0">
+            <state line="31" column="1" selection-start="1021" selection-end="1021" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="viewscript.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/viewscript.js">
+      <file leaf-file-name="searchlocal.js.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/inicial/searchlocal.js.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="146" column="37" selection-start="4487" selection-end="4487" vertical-scroll-proportion="0.42122185">
+            <state line="4" column="0" selection-start="87" selection-end="87" vertical-scroll-proportion="0.14888337">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gmaps4rails.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/gmaps4rails.css">
+      <file leaf-file-name="create.js.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/inicial/create.js.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="22" selection-start="324" selection-end="324" vertical-scroll-proportion="0.0">
+            <state line="4" column="0" selection-start="142" selection-end="174" vertical-scroll-proportion="-2.5">
               <folding />
             </state>
           </provider>
@@ -76,7 +86,7 @@
       <file leaf-file-name="_map.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/shared/_map.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="44" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="584" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -100,22 +110,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/../doeja 2/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/style.css" />
-        <option value="$PROJECT_DIR$/config/initializers/geocoder.rb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/gmapsvar.js" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/app/views/inicial/index.html.erb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/views/inicial/index.js.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/shared/_receive.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/viewscript.js" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/centerplace.js" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/flash_notice.js" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/style.css" />
+        <option value="$PROJECT_DIR$/app/views/inicial/create.js.erb" />
         <option value="$PROJECT_DIR$/app/views/shared/_donate.html.erb" />
         <option value="$PROJECT_DIR$/app/views/shared/_mapbox.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/inicial_controller.rb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/searchplace.js" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/gmapsvar.js" />
         <option value="$PROJECT_DIR$/app/views/shared/_map.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/gmaps4rails.css" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/viewscript.js" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/searchplace.js" />
+        <option value="$PROJECT_DIR$/app/views/inicial/searchlocal.js.erb" />
       </list>
     </option>
   </component>
@@ -127,8 +137,8 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1657" />
-    <option name="width" value="1600" />
+    <option name="x" value="1600" />
+    <option name="width" value="1360" />
     <option name="height" value="768" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -176,8 +186,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="RailsProjectView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -193,6 +201,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="doeja" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doeja" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doeja" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -233,6 +255,50 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doeja" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doeja" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doeja" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doeja" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inicial" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -303,10 +369,6 @@
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -330,40 +392,27 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doeja" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doeja" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="RailsProjectView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="editing.templates" />
+    <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../blah" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/assets/javascripts" />
+      <recent name="$PROJECT_DIR$/app/views/inicial" />
       <recent name="$PROJECT_DIR$/app/views/shared" />
     </key>
   </component>
@@ -494,6 +543,13 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
+      <JSRemoteDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSRemoteDebuggerConfigurationSettings>
+      <method />
+    </configuration>
     <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
       <option name="VM_PARAMETERS" value="" />
       <option name="USER_CFG_CLASS" />
@@ -621,23 +677,23 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1657" y="0" width="1600" height="768" extended-state="6" />
+    <frame x="1600" y="0" width="1360" height="768" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36422136" sideWeight="0.6492308" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22678843" sideWeight="0.7" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35185185" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35076922" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3276923" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -701,105 +757,111 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/receiver.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="4" selection-start="478" selection-end="478" vertical-scroll-proportion="0.50507617">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/tags.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="11701" selection-start="11699" selection-end="11701" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_receive.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="118" selection-start="377" selection-end="377" vertical-scroll-proportion="0.21008404">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/receiver.js.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="22" column="0" selection-start="812" selection-end="812" vertical-scroll-proportion="0.5631399" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="30" selection-start="231" selection-end="231" vertical-scroll-proportion="0.3108108">
-          <folding />
-        </state>
+        <state line="13" column="16" selection-start="249" selection-end="249" vertical-scroll-proportion="0.41954023" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/gmapsvar.js">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/flash_notice.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="10" column="1" selection-start="487" selection-end="487" vertical-scroll-proportion="0.4032258" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/searchplace.js">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="14" selection-start="508" selection-end="508" vertical-scroll-proportion="0.54469275" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/gmaps4rails/gmaps4rails.base.js.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="5" selection-start="12" selection-end="17" vertical-scroll-proportion="-3.0271084">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/gmaps4rails/gmaps4rails.googlemaps.js.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="38" selection-start="346" selection-end="351" vertical-scroll-proportion="0.18072289">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_mapbox.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="24" selection-start="111" selection-end="111" vertical-scroll-proportion="0.12162162" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/inicial_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="47" selection-start="448" selection-end="448" vertical-scroll-proportion="0.27918783" />
+        <state line="503" column="23" selection-start="9452" selection-end="9452" vertical-scroll-proportion="0.68586385" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/shared/_donate.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="60" selection-start="1280" selection-end="1280" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_map.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="44" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/gmaps4rails.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="22" selection-start="324" selection-end="324" vertical-scroll-proportion="0.0">
+        <state line="15" column="48" selection-start="1509" selection-end="1509" vertical-scroll-proportion="0.49860725">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/viewscript.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="37" selection-start="4487" selection-end="4487" vertical-scroll-proportion="0.42122185">
+        <state line="180" column="41" selection-start="5799" selection-end="5799" vertical-scroll-proportion="0.76407504">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_receive.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="47" selection-start="1594" selection-end="1594" vertical-scroll-proportion="0.04178273">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_mapbox.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="8" selection-start="231" selection-end="231" vertical-scroll-proportion="-4.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/receiver.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="18" selection-start="127" selection-end="127" vertical-scroll-proportion="0.21779859">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_map.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="584" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/gmapsvar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="0" selection-start="1487" selection-end="1487" vertical-scroll-proportion="2.4941452">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/inicial_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="0" selection-start="884" selection-end="884" vertical-scroll-proportion="0.5289855">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/inicial/create.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="142" selection-end="174" vertical-scroll-proportion="-2.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/searchplace.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="1" selection-start="1021" selection-end="1021" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/inicial/searchlocal.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="87" selection-end="87" vertical-scroll-proportion="0.14888337">
           <folding />
         </state>
       </provider>

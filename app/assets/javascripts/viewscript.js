@@ -162,4 +162,25 @@ $('#esq-4').change(function(){
     getMapByGeoLocation(fulladdress);
 });
 
+$('#dir-1').change(function(){
+    City = document.getElementById('dir-1').value;
+    fulladdress = Street + ', ' + Number + ', ' + Neighborhood + ', ' + City;
+    getMapByGeoLocation(fulladdress);
+});
+$('#dir-2').change(function(){
+    Street = document.getElementById('dir-2').value;
+    fulladdress = Street + ', ' + Number + ', ' + Neighborhood + ', ' + City;
+    getMapByGeoLocation(fulladdress);
+});
+$('#dir-3').change(function(){
+    Neighborhood = document.getElementById('dir-3').value;
+    fulladdress = Street + ', ' + Number + ', ' + Neighborhood + ', ' + City;
+    getMapByGeoLocation(fulladdress);
+});
+$('#dir-4').change(function(){
+    Number = document.getElementById('dir-4').value;
+    fulladdress = Street + ', ' + Number + ', ' + Neighborhood + ', ' + City;
+    getMapByGeoLocation(fulladdress);
+});
+
 $("#registro").formToWizard();

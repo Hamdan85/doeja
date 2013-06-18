@@ -491,3 +491,17 @@ select{
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
+
+#flash_notice{
+    width:200px;
+    padding:10px;
+    background-color: black;
+    color:white;
+    opacity:0.7;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+}

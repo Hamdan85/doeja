@@ -3,7 +3,7 @@
   <div id="seta1" class="back-icon-div2"><a href="#" class="back-icon2" id="back-receber"></a></div>
   <label id="regis">SEJA ENCONTRADO</label>
 
-  <%= form_for(:receiver, :html => { :id => 'registro'}, :url => { :action => 'create', :controller => :inicial } ) do |f| %> <!-- <form id="registro"> -->
+  <%= form_for(:receiver, :html => { :id => 'registro'}, :url => { :action => 'create', :controller => :inicial }, :remote => true ) do |f| %> <!-- <form id="registro"> -->
 
       <fieldset>
         <label>VOCÊ É</label>
@@ -13,10 +13,10 @@
         <!--<label style="font-size:0.8em;">Descobrir Automaticamente?</label>
         <input class="dir" style="float:right; margin:-24px -70px 0 0; height:13px;" type="checkbox"><br />
         <small id="exemplo2">Usamos Geolocalização do Google</small>-->
-        <%= f.text_field :city, :class => 'dir', :placeholder => 'Cidade' %><!--<input class="dir" type="text" placeholder="Cidade">--><br />
-        <%= f.text_field :street, :class => 'dir', :placeholder => 'Rua' %><!--<input class="dir" type="text" placeholder="Rua">--><br />
-        <%= f.text_field :neighborhood, :class => 'dir', :placeholder => 'Bairro', :style => 'width:60%;' %><!--<input class="dir" type="text" name="doar" style="width:60%;" placeholder="Bairro">-->
-        <%= f.text_field :number, :class => 'dir', :placeholder => 'N°', :style => 'width:20%;' %><!--<input style="width:20%;" type="text" placeholder="N°">--><br />
+        <%= f.text_field :city, :id => 'dir-1', :class => 'dir', :placeholder => 'Cidade' %><!--<input class="dir" type="text" placeholder="Cidade">--><br />
+        <%= f.text_field :street, :id => 'dir-2', :class => 'dir', :placeholder => 'Rua' %><!--<input class="dir" type="text" placeholder="Rua">--><br />
+        <%= f.text_field :neighborhood, :id => 'dir-3', :class => 'dir', :placeholder => 'Bairro', :style => 'width:60%;' %><!--<input class="dir" type="text" name="doar" style="width:60%;" placeholder="Bairro">-->
+        <%= f.text_field :number, :id => 'dir-4', :class => 'dir', :placeholder => 'N°', :style => 'width:20%;' %><!--<input style="width:20%;" type="text" placeholder="N°">--><br />
       </fieldset>
 
     <fieldset>
