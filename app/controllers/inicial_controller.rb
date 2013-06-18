@@ -48,7 +48,11 @@ class InicialController < ApplicationController
 
   def tipodoacao
 
-    @tipodoacao = Receiver.where('receiving LIKE :prefix', prefix: "%#{params[:query]}%").uniq.pluck(:receiving)
+    if params[:query].nil?
+      @tipodoacao = Receiver.all.uniq.pluck(:receiving)
+    else
+      @tipodoacao = Receiver.where('receiving LIKE :prefix', prefix: "%#{params[:query]}%").uniq.pluck(:receiving)
+    end
 
     if @tipodoacao
       respond_to do |format|
