@@ -8,7 +8,7 @@ $(".tag-tipo").magicSuggest({
     emptyTextCls: 'customEmptyTextCls',
     typeDelay: 0,
     maxEntryRenderer: 'Por favor escolha somente um',
-        data: 'Instituição, Pessoa, Barzinho, Empreendedor, Amigo'
+    data: 'Instituição, Pessoa Física, Pessoa Jurídica, ONG'
 });
 
 $(".tags").magicSuggest({
@@ -18,8 +18,8 @@ $(".tags").magicSuggest({
     name: 'doar',
     emptyText: 'Doe o que quiser!',
     emptyTextCls: 'customEmptyTextCls',
-    typeDelay: 0,
-    data: 'amor,roupas,dinheiro,geladeira,fogão,sapatos,instrumentos'
+    typeDelay: 1,
+    data: '/tipodoacao'
 });
 
 $(".tag-receber").magicSuggest({
@@ -182,5 +182,7 @@ $('#dir-4').change(function(){
     fulladdress = Street + ', ' + Number + ', ' + Neighborhood + ', ' + City;
     getMapByGeoLocation(fulladdress);
 });
+
+
 
 $("#registro").formToWizard();

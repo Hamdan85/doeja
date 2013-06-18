@@ -45,4 +45,16 @@ class InicialController < ApplicationController
       format.js
     end
   end
+
+  def tipodoacao
+
+    @tipodoacao = Receiver.where('receiving LIKE :prefix', prefix: "%#{params[:query]}%").uniq.pluck(:receiving)
+
+    if @tipodoacao
+      respond_to do |format|
+        format.json { render json: @tipodoacao.as_json }
+      end
+    end
+
+  end
 end
