@@ -29,8 +29,8 @@ $(".tag-receber").magicSuggest({
     name: 'doar',
     emptyText: 'Doe o que quiser!',
     emptyTextCls: 'customEmptyTextCls',
-    typeDelay: 0,
-    data: 'amor,roupas,dinheiro,geladeira,fogão,sapatos,instrumentos'
+    typeDelay: 1,
+    data: '/tipodoacao'
 });
 
 var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),

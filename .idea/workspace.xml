@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_donate.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_donate.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/inicial_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/inicial_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/viewscript.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/viewscript.js" />
     </list>
     <ignored path="doeja.iws" />
@@ -55,10 +52,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="viewscript.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="viewscript.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/viewscript.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="16" selection-start="544" selection-end="544" vertical-scroll-proportion="0.0">
+            <state line="32" column="23" selection-start="803" selection-end="803" vertical-scroll-proportion="0.91121495">
               <folding />
             </state>
           </provider>
@@ -73,10 +70,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inicial_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="inicial_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/inicial_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="56" selection-start="1248" selection-end="1248" vertical-scroll-proportion="0.74698794">
+            <state line="54" column="56" selection-start="1248" selection-end="1248" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -123,8 +120,8 @@
         <option value="$PROJECT_DIR$/app/views/inicial/searchlocal.js.erb" />
         <option value="$PROJECT_DIR$/app/views/shared/_donate.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/viewscript.js" />
         <option value="$PROJECT_DIR$/app/controllers/inicial_controller.rb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/viewscript.js" />
       </list>
     </option>
   </component>
@@ -820,13 +817,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/viewscript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="16" selection-start="544" selection-end="544" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="44" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0">
@@ -836,7 +826,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/inicial_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="56" selection-start="1248" selection-end="1248" vertical-scroll-proportion="0.74698794">
+        <state line="54" column="56" selection-start="1248" selection-end="1248" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/viewscript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="23" selection-start="803" selection-end="803" vertical-scroll-proportion="0.91121495">
           <folding />
         </state>
       </provider>
