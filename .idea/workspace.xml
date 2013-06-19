@@ -2,22 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_receive.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_receive.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/inicial_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/inicial_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/receiver.rb" afterPath="$PROJECT_DIR$/app/models/receiver.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="doeja.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371612130272" ignored="false" />
+    <file path="/Dummy.txt" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371654317999" ignored="false" />
     <file path="/routes.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371531202732" ignored="false" />
     <file path="/index.html.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1370490478414" ignored="false" />
     <file path="/development.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1370143162636" ignored="false" />
     <file path="/a.dummy" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1370143202172" ignored="false" />
     <file path="/_receive.html.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371615383716" ignored="false" />
-    <file path="/inicial_controller.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371607656277" ignored="false" />
+    <file path="/inicial_controller.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371659811791" ignored="false" />
     <file path="/receiver_controller.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1370198177067" ignored="false" />
     <file path="/receiver.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371615603499" ignored="false" />
     <file path="/geocoder.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371603819236" ignored="false" />
@@ -60,55 +56,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="viewscript.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/viewscript.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="78" selection-start="1595" selection-end="1595" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="44" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="inicial_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="inicial_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/inicial_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="0" selection-start="967" selection-end="967" vertical-scroll-proportion="0.0">
+            <state line="31" column="0" selection-start="495" selection-end="495" vertical-scroll-proportion="0.33333334">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="receiver.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/models/receiver.rb">
+      <file leaf-file-name="_donate.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/shared/_donate.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="53" selection-start="932" selection-end="932" vertical-scroll-proportion="0.9302326">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20130602191526_add_geo_to_receiver.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20130602191526_add_geo_to_receiver.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_receive.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/shared/_receive.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="108" selection-start="1628" selection-end="1628" vertical-scroll-proportion="-7.2916665">
+            <state line="11" column="95" selection-start="1070" selection-end="1070" vertical-scroll-proportion="-6.875">
               <folding />
             </state>
           </provider>
@@ -144,10 +104,10 @@
         <option value="$PROJECT_DIR$/config/initializers/geocoder.rb" />
         <option value="$PROJECT_DIR$/config/locales/pt_BR.yml" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/viewscript.js" />
-        <option value="$PROJECT_DIR$/app/controllers/inicial_controller.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130619041250_add_compl_to_receiver.rb" />
-        <option value="$PROJECT_DIR$/app/views/shared/_receive.html.erb" />
         <option value="$PROJECT_DIR$/app/models/receiver.rb" />
+        <option value="$PROJECT_DIR$/app/views/shared/_receive.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/inicial_controller.rb" />
       </list>
     </option>
   </component>
@@ -208,7 +168,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -435,7 +395,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -735,14 +695,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1600" y="0" width="1360" height="768" extended-state="6" />
+    <frame x="1600" y="0" width="1360" height="768" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24200913" sideWeight="0.7046154" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24961948" sideWeight="0.7046154" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35185185" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -820,98 +780,65 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/searchplace.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="1" selection-start="778" selection-end="778" vertical-scroll-proportion="0.6993007" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/inicial/searchlocal.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="455" selection-end="455" vertical-scroll-proportion="0.6666667">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="44" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_donate.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="95" selection-start="1070" selection-end="1070" vertical-scroll-proportion="0.3877551">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/environment.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/boot.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="4" selection-start="1505" selection-end="1505" vertical-scroll-proportion="0.45">
-          <folding />
-        </state>
+        <state line="32" column="4" selection-start="1505" selection-end="1505" vertical-scroll-proportion="0.45" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20130602040344_create_receivers.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="23" selection-start="161" selection-end="161" vertical-scroll-proportion="0.17482518">
-          <folding />
-        </state>
+        <state line="5" column="23" selection-start="161" selection-end="161" vertical-scroll-proportion="0.17482518" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/geocoder.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="20" selection-start="201" selection-end="201" vertical-scroll-proportion="0.14469454">
-          <folding />
-        </state>
+        <state line="6" column="20" selection-start="201" selection-end="201" vertical-scroll-proportion="0.14469454" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/locales/pt_BR.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="206" column="17" selection-start="7" selection-end="4910" vertical-scroll-proportion="4.9678454">
+        <state line="206" column="17" selection-start="7" selection-end="4910" vertical-scroll-proportion="4.9678454" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130619041250_add_compl_to_receiver.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="29" selection-start="93" selection-end="93" vertical-scroll-proportion="0.07371008" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="44" selection-start="255" selection-end="255" vertical-scroll-proportion="0.024115756">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/viewscript.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="78" selection-start="1595" selection-end="1595" vertical-scroll-proportion="0.0">
+        <state line="50" column="78" selection-start="1595" selection-end="1595" vertical-scroll-proportion="0.024115756">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/inicial_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/searchplace.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="967" selection-end="967" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130619041250_add_compl_to_receiver.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="29" selection-start="93" selection-end="93" vertical-scroll-proportion="0.07371008">
+        <state line="20" column="1" selection-start="778" selection-end="778" vertical-scroll-proportion="0.7371007">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/shared/_receive.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="108" selection-start="1628" selection-end="1628" vertical-scroll-proportion="-7.2916665">
+        <state line="19" column="108" selection-start="1650" selection-end="1650" vertical-scroll-proportion="0.36386767">
           <folding />
         </state>
       </provider>
@@ -925,7 +852,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/receiver.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="53" selection-start="932" selection-end="932" vertical-scroll-proportion="0.9302326">
+        <state line="1" column="34" selection-start="65" selection-end="70" vertical-scroll-proportion="0.034883723">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/inicial/searchlocal.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="455" selection-end="455" vertical-scroll-proportion="0.66502464">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_donate.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="95" selection-start="1070" selection-end="1070" vertical-scroll-proportion="-6.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/inicial_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="0" selection-start="495" selection-end="495" vertical-scroll-proportion="0.33333334">
           <folding />
         </state>
       </provider>
