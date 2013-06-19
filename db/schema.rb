@@ -11,18 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130602210906) do
+ActiveRecord::Schema.define(:version => 20130619041250) do
 
   create_table "receivers", :force => true do |t|
     t.string   "kind"
     t.string   "name"
+    t.string   "address"
     t.string   "city"
-    t.string   "street"
     t.string   "neighborhood"
-    t.integer  "number"
     t.string   "receiving"
     t.text     "description"
-    t.text     "howweuse"
     t.string   "phone"
     t.string   "email"
     t.datetime "created_at",   :null => false
@@ -30,7 +28,7 @@ ActiveRecord::Schema.define(:version => 20130602210906) do
     t.float    "latitude"
     t.float    "longitude"
     t.boolean  "gmaps"
-    t.string   "address"
+    t.string   "compl"
   end
 
 end

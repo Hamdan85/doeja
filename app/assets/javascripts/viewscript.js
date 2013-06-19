@@ -4,7 +4,7 @@ $(".tag-tipo").magicSuggest({
     maxSelection: 1,
     maxSuggestions: 3,
     name: 'voce',
-    emptyText: 'Instituição, Pessoa...',
+    emptyText: '',
     emptyTextCls: 'customEmptyTextCls',
     typeDelay: 0,
     maxEntryRenderer: 'Por favor escolha somente um',
@@ -16,7 +16,7 @@ $(".tags").magicSuggest({
     width: 220,
     maxSuggestions: 5,
     name: 'doar',
-    emptyText: 'Doe o que quiser!',
+    emptyText: '',
     emptyTextCls: 'customEmptyTextCls',
     typeDelay: 1,
     data: '/tipodoacao'
@@ -27,7 +27,7 @@ $(".tag-receber").magicSuggest({
     width: 220,
     maxSuggestions: 5,
     name: 'doar',
-    emptyText: 'Doe o que quiser!',
+    emptyText: '',
     emptyTextCls: 'customEmptyTextCls',
     typeDelay: 1,
     data: '/tipodoacao'
@@ -182,7 +182,5 @@ $('#dir-4').change(function(){
     fulladdress = Street + ', ' + Number + ', ' + Neighborhood + ', ' + City;
     getMapByGeoLocation(fulladdress.toLowerCase());
 });
-
-
 
 $("#registro").formToWizard();

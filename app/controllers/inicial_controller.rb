@@ -41,17 +41,18 @@ class InicialController < ApplicationController
 
     respond_to do |format|
       format.json { render json: @receiving2 }
-      puts @receiving2
       format.js
     end
   end
 
   def tipodoacao
 
+    @parameters = params[:query].downcase
+
     if params[:query].nil?
       @tipodoacao = Receiver.all.uniq.pluck(:receiving)
     else
-      @tipodoacao = Receiver.where('receiving LIKE :prefix', prefix: "%#{params[:query]}%").uniq.pluck(:receiving)
+      @tipodoacao = Receiver.where('lower(receiving) LIKE :prefix', prefix: "%#{@parameters}%").uniq.pluck(:receiving)
     end
 
     if @tipodoacao

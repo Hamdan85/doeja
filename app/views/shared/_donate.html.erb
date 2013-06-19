@@ -8,9 +8,9 @@
     <small id="exemplo">Usamos Geolocalização do Google</small>-->
 
     <%= f.text_field :city, :class => 'esq', :id => 'esq-1', :placeholder => 'Cidade', :"data-field" => "city" %><!--<input class="esq" type="text" placeholder="Cidade">--><br />
-    <%= f.text_field :street, :class => 'esq', :id => 'esq-2', :placeholder => 'Rua', :"data-field" => "street" %><!--<input class="esq" type="text" placeholder="Rua">--><br />
-    <%= f.text_field :neighborhood, :class => 'esq', :id => 'esq-3', :placeholder => 'Bairro', :style => "width:60%;", :"data-field" => "neighborhood" %><!--<input class="esq" type="text" name="doar" style="width:60%;" placeholder="Bairro">-->
-    <%= f.text_field :number, :class => 'esq', :id => 'esq-4', :placeholder => 'N°', :style => "width:18%;", :"data-field" => "number" %><!--<input style="width:20%;" type="text" placeholder="N°">--><br />
+    <%= f.text_field :address, :class => 'esq', :id => 'esq-2', :placeholder => 'Rua', :"data-field" => "street" %><!--<input class="esq" type="text" placeholder="Rua">--><br />
+    <%= f.text_field :neighborhood, :class => 'esq', :id => 'esq-3', :placeholder => 'Bairro', :"data-field" => "neighborhood" %><!--<input class="esq" type="text" name="doar" style="width:60%;" placeholder="Bairro">-->
+
 
     <label>O QUE QUER DOAR?</label>
     <%= f.text_field :receiving, :class => 'tags', :id => 'donatekind' %><br />

@@ -14,9 +14,9 @@
         <input class="dir" style="float:right; margin:-24px -70px 0 0; height:13px;" type="checkbox"><br />
         <small id="exemplo2">Usamos Geolocalização do Google</small>-->
         <%= f.text_field :city, :id => 'dir-1', :class => 'dir', :placeholder => 'Cidade' %><!--<input class="dir" type="text" placeholder="Cidade">--><br />
-        <%= f.text_field :street, :id => 'dir-2', :class => 'dir', :placeholder => 'Rua' %><!--<input class="dir" type="text" placeholder="Rua">--><br />
-        <%= f.text_field :neighborhood, :id => 'dir-3', :class => 'dir', :placeholder => 'Bairro', :style => 'width:60%;' %><!--<input class="dir" type="text" name="doar" style="width:60%;" placeholder="Bairro">-->
-        <%= f.text_field :number, :id => 'dir-4', :class => 'dir', :placeholder => 'N°', :style => 'width:20%;' %><!--<input style="width:20%;" type="text" placeholder="N°">--><br />
+        <%= f.text_field :address, :id => 'dir-2', :class => 'dir', :placeholder => 'Rua/N°' %><!--<input class="dir" type="text" placeholder="Rua">--><br />
+        <%= f.text_field :compl, :class => 'dir', :placeholder => 'Complemento' %>
+        <%= f.text_field :neighborhood, :id => 'dir-3', :class => 'dir', :placeholder => 'Bairro' %><!--<input class="dir" type="text" name="doar" style="width:60%;" placeholder="Bairro">-->
       </fieldset>
 
     <fieldset>
@@ -25,7 +25,6 @@
       <small class="exemplo1">Ex: Roupas, dinheiro, amor...</small>
       <label>DESCREVA SEUS TRABALHOS</label>
       <%= f.text_area :description, :placeholder => 'Breve descrição...' %><!--<textarea placeholder="Breve Descrição"></textarea>--><br />
-      <%= f.text_area :howweuse, :placeholder => 'Breve descrição...' %><!--<textarea placeholder="Como Usamos as Doações"></textarea>--><br />
       <%= f.text_field :phone, :class => 'dir', :placeholder => 'Telefone' %><!--<input class="dir" type="text" placeholder="Telefone">--><br />
       <%= f.text_field :email, :class => 'dir', :placeholder => 'Email' %><!--<input class="dir" type="email" placeholder="Email">--><br />
     </fieldset>
