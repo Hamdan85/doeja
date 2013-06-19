@@ -32,6 +32,11 @@ class InicialController < ApplicationController
 
     @receiving2 = Receiver.where("lower(receiving) =? and lower(city) = ?", params[:Donate][:receiving].downcase,params[:Donate][:city].downcase).to_gmaps4rails do |address, marker|
       marker.infowindow render_to_string(:partial => "/shared/mapbox", :locals => { :address => address })
+      marker.picture({
+                         :picture => "/assets/bmarker.png",
+                         :width   => 32,
+                         :height  => 32
+                     })
       marker.json(address)
     end
 

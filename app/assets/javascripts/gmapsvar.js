@@ -64,12 +64,5 @@ var mystyles = [
 var options = {
     mapTypeControlOptions: {
         mapTypeIds: [ 'Styled']
-    },
-    center: new google.maps.LatLng(-19.928293492248798, -43.96447708606722),
-    zoom: 14,
-    mapTypeId: 'Styled'
+    }
 };
-var div = document.getElementById('map');
-var map = new google.maps.Map(div, options);
-var styledMapType = new google.maps.StyledMapType(styles, { name: 'Styled' });
-map.mapTypes.set('Styled', styledMapType);
