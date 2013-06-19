@@ -7,7 +7,7 @@
 
       <fieldset>
         <label>VOCÊ É</label>
-        <%= f.text_field :kind, :class => 'tag-tipo' %><!--<input class="tag-tipo" type="text">--></br>
+        <%= f.text_field :kind, :class => 'tag-tipo', :autocomplete => :off %><!--<input class="tag-tipo" type="text">--></br>
         <%= f.text_field :name, :class => 'dir', :placeholder => 'Nome' %><!--<input class="dir" type="text" placeholder="nome">--><br />
         <label>ONDE VOCÊ ESTÁ?</label>
         <!--<label style="font-size:0.8em;">Descobrir Automaticamente?</label>
@@ -21,7 +21,7 @@
 
     <fieldset>
       <label>O QUE ACEITA RECEBER?</label>
-      <%= f.text_field :receiving, :class => 'tag-receber' %><!--<input class="tag-receber" type="text">--><br />
+      <%= f.text_field :receiving, :class => 'tag-receber', :autocomplete => :off %><!--<input class="tag-receber" type="text">--><br />
       <small class="exemplo1">Ex: Roupas, dinheiro, amor...</small>
       <label>DESCREVA SEUS TRABALHOS</label>
       <%= f.text_area :description, :placeholder => 'Breve descrição...' %><!--<textarea placeholder="Breve Descrição"></textarea>--><br />
