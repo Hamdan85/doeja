@@ -1,9 +1,12 @@
-<h3><%= JSON.parse(address.kind.to_s) %></h3>
-<h1><%= address.name %></h1>
-<h1><%= address.address.split(',')[0] %></h1>
-<h1><%= address.address.split(',')[1] %></h1>
-<h1><%= JSON.parse(address.receiving.to_s) %></h1>
-<h1><%= address.description %></h1>
-<h1><%= address.phone %></h1>
-<h1><%= address.email %></h1>
+<h3>Tipo: <%= JSON.parse(address.kind.to_s).first %></h3>
+<h1>Nome: <%= address.name %></h1>
+<h1>Endereço:
+<%= address.address.split('-')[0] %></h1>
+<h1><%= address.address.split('-')[1] %></h1>
+<h1><%= address.address.split('-')[2].split(',')[0] %></h1>
+<h1>Recebendo: <%= JSON.parse(address.receiving.to_s).first %></h1>
+<h1>Descrição: </br>
+  <%= address.description %></h1>
+<h1>Telefone: <%= address.phone %></h1>
+<h1>E-mail: <%= address.email %></h1>
 </br>
