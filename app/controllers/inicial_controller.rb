@@ -30,7 +30,7 @@ class InicialController < ApplicationController
 
   def searchlocal
 
-    @receiving2 = Receiver.where("receiving =? and city = ?", JSON.parse(params[:Donate][:receiving].to_s).first.downcase,params[:Donate][:city]).to_gmaps4rails do |address, marker|
+    @receiving2 = Receiver.where("receiving =? and city = ?", params[:Donate][:receiving].downcase,params[:Donate][:city].downcase).to_gmaps4rails do |address, marker|
       marker.infowindow render_to_string(:partial => "/shared/mapbox", :locals => { :address => address })
       marker.json(address)
     end
@@ -38,6 +38,8 @@ class InicialController < ApplicationController
     if @receiving2 == '[]'
       @alert = 'Desculpe! Sem entradas para o pesquisado!'
     end
+
+    puts params[:Donate][:receiving]
 
     puts @receiving2
 
