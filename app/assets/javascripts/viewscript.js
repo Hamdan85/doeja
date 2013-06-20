@@ -102,9 +102,11 @@ function disableOther( button ) {
         classie.toggle( showRightPush, 'disabled' );
     }
 }
+/*
 $(function() {
     $( "#tabs" ).tabs({ active: 0 });
 });
+*/
 
 
 function doeJa(){

@@ -7,13 +7,15 @@ function getMapByGeoLocation(address) {
             lat = results[0].geometry.location.lat();
             lng = results[0].geometry.location.lng();
         } else {
-            result = "Unable to find address: " + status;
+            alert("Endereço não encontrado: " + status);
         }
+
+        var position = new google.maps.LatLng(lat, lng)
 
 
         setTimeout(function() {
             //var bounds = new google.maps.LatLngBounds(new google.maps.LatLng(lat, lng),new google.maps.LatLng(lat, lng));
-            Gmaps.map.serviceObject.setCenter(new google.maps.LatLng(lat, lng));
+            Gmaps.map.serviceObject.setCenter(position);
 
             Gmaps.map.clearMarkers();
 
@@ -27,6 +29,7 @@ function getMapByGeoLocation(address) {
 
             Gmaps.map.serviceObject.getZoom()
         }, 50);
+
 
     });
 }
