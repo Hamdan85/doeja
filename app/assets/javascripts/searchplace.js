@@ -13,14 +13,22 @@ function getMapByGeoLocation(address) {
         var position = new google.maps.LatLng(lat, lng)
 
 
-        Gmaps.map.serviceObject.setCenter(position);
+        setTimeout(function() {
+            //var bounds = new google.maps.LatLngBounds(new google.maps.LatLng(lat, lng),new google.maps.LatLng(lat, lng));
+            Gmaps.map.serviceObject.setCenter(position);
 
-        Gmaps.map.createMarker({
-            Lat: lat,
-            Lng: lng,
-            rich_marker: false,
-            marker_picture: ""
-        });
+            Gmaps.map.clearMarkers();
+
+            Gmaps.map.createMarker({
+                Lat: lat,
+                Lng: lng,
+                draggable: true,
+                rich_marker: null,
+                marker_picture: ""
+            });
+
+            Gmaps.map.serviceObject.getZoom()
+        }, 50);
 
 
     });
