@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/receiver.rb" afterPath="$PROJECT_DIR$/app/models/receiver.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/inicial/searchlocal.js.erb" afterPath="$PROJECT_DIR$/app/views/inicial/searchlocal.js.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/searchplace.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/searchplace.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/viewscript.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/viewscript.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="doeja.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371774035315" ignored="false" />
+    <file path="/Dummy.txt" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372095965655" ignored="false" />
     <file path="/routes.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371531202732" ignored="false" />
     <file path="/index.html.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1370490478414" ignored="false" />
     <file path="/development.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1370143162636" ignored="false" />
@@ -25,7 +23,7 @@
     <file path="/gmaps4rails.css" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1370929506296" ignored="false" />
     <file path="/style.css" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371351126111" ignored="false" />
     <file path="/gmapsvar.js" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371514915177" ignored="false" />
-    <file path="/searchplace.js" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371792637698" ignored="false" />
+    <file path="/searchplace.js" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372096607148" ignored="false" />
     <file path="/_donate.html.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371600729147" ignored="false" />
     <file path="/_mapbox.html.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371663626232" ignored="false" />
     <file path="/_map.html.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371515095246" ignored="false" />
@@ -68,10 +66,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="viewscript.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="viewscript.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/viewscript.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="148" column="0" selection-start="4302" selection-end="4302" vertical-scroll-proportion="-2.8363636">
+            <state line="187" column="9" selection-start="5793" selection-end="5793" vertical-scroll-proportion="1.6204189">
               <folding />
             </state>
           </provider>
@@ -86,10 +84,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="searchplace.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="searchplace.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/searchplace.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="26" selection-start="577" selection-end="577" vertical-scroll-proportion="0.5673759">
+            <state line="57" column="1" selection-start="1550" selection-end="1550" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -127,8 +125,8 @@
         <option value="$PROJECT_DIR$/app/controllers/inicial_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/receiver.rb" />
         <option value="$PROJECT_DIR$/app/views/inicial/searchlocal.js.erb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/viewscript.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/searchplace.js" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/viewscript.js" />
       </list>
     </option>
   </component>
@@ -383,8 +381,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
       <pane id="Scope" />
+      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -711,11 +709,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923076" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34018266" sideWeight="0.71384615" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41400304" sideWeight="0.7153846" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35185185" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28615385" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2846154" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -811,9 +809,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/shared/_mapbox.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="2" selection-start="346" selection-end="346" vertical-scroll-proportion="-5.0">
-          <folding />
-        </state>
+        <state line="8" column="2" selection-start="346" selection-end="346" vertical-scroll-proportion="-5.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
@@ -823,11 +819,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/formToWizard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/modernizr.custom.js">
@@ -842,23 +834,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/tags.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/gmapsvar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="2" selection-start="1370" selection-end="1370" vertical-scroll-proportion="0.79357797">
-          <folding />
-        </state>
+        <state line="67" column="2" selection-start="1370" selection-end="1370" vertical-scroll-proportion="0.79357797" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/receiver.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="98" selection-start="956" selection-end="956" vertical-scroll-proportion="0.58715594">
-          <folding />
-        </state>
+        <state line="30" column="98" selection-start="956" selection-end="956" vertical-scroll-proportion="0.58715594" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/inicial_controller.rb">
@@ -875,16 +861,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/viewscript.js">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/searchplace.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="148" column="0" selection-start="4302" selection-end="4302" vertical-scroll-proportion="-2.8363636">
+        <state line="57" column="1" selection-start="1550" selection-end="1550" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/searchplace.js">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/viewscript.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="26" selection-start="577" selection-end="577" vertical-scroll-proportion="0.5673759">
+        <state line="187" column="9" selection-start="5793" selection-end="5793" vertical-scroll-proportion="1.6204189">
           <folding />
         </state>
       </provider>

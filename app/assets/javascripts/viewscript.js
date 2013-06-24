@@ -146,43 +146,43 @@ var Neighborhood = "";
 $('#esq-1').change(function(){
     City = document.getElementById('esq-1').value;
     fulladdress = Street + ', ' + Number + ', ' + Neighborhood + ', ' + City;
-    putUserMarker(calcusermarkerhash(getMapByGeoLocation(fulladdress)[0],getMapByGeoLocation(fulladdress)[1]))
+    getMapByGeoLocation(fulladdress);
 });
 $('#esq-2').change(function(){
     Street = document.getElementById('esq-2').value;
     fulladdress = Street + ', ' + Number + ', ' + Neighborhood + ', ' + City;
-    putUserMarker(calcusermarkerhash(getMapByGeoLocation(fulladdress)[0],getMapByGeoLocation(fulladdress)[1]))
+    getMapByGeoLocation(fulladdress);
 });
 $('#esq-3').change(function(){
     Neighborhood = document.getElementById('esq-3').value;
     fulladdress = Street + ', ' + Number + ', ' + Neighborhood + ', ' + City;
-    putUserMarker(calcusermarkerhash(getMapByGeoLocation(fulladdress)[0],getMapByGeoLocation(fulladdress)[1]))
+    getMapByGeoLocation(fulladdress);
 });
 $('#esq-4').change(function(){
     Number = document.getElementById('esq-4').value;
     fulladdress = Street + ', ' + Number + ', ' + Neighborhood + ', ' + City;
-    putUserMarker(calcusermarkerhash(getMapByGeoLocation(fulladdress)[0],getMapByGeoLocation(fulladdress)[1]))
+    getMapByGeoLocation(fulladdress);
 });
 
 $('#dir-1').change(function(){
     City = document.getElementById('dir-1').value;
     fulladdress = Street + ', ' + Number + ', ' + Neighborhood + ', ' + City;
-    putUserMarker(calcusermarkerhash(getMapByGeoLocation(fulladdress)[0],getMapByGeoLocation(fulladdress)[1]))
+    getMapByGeoLocation(fulladdress);
 });
 $('#dir-2').change(function(){
     Street = document.getElementById('dir-2').value;
     fulladdress = Street + ', ' + Number + ', ' + Neighborhood + ', ' + City;
-    putUserMarker(calcusermarkerhash(getMapByGeoLocation(fulladdress)[0],getMapByGeoLocation(fulladdress)[1]))
+    getMapByGeoLocation(fulladdress);
 });
 $('#dir-3').change(function(){
     Neighborhood = document.getElementById('dir-3').value;
     fulladdress = Street + ', ' + Number + ', ' + Neighborhood + ', ' + City;
-    putUserMarker(calcusermarkerhash(getMapByGeoLocation(fulladdress)[0],getMapByGeoLocation(fulladdress)[1]))
+    getMapByGeoLocation(fulladdress);
 });
 $('#dir-4').change(function(){
     Number = document.getElementById('dir-4').value;
     fulladdress = Street + ', ' + Number + ', ' + Neighborhood + ', ' + City;
-    putUserMarker(calcusermarkerhash(getMapByGeoLocation(fulladdress)[0],getMapByGeoLocation(fulladdress)[1]))
+    getMapByGeoLocation(fulladdress);
 });
 
 $("#registro").formToWizard();

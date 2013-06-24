@@ -1,27 +1,32 @@
-function getMapByGeoLocation(address,add) {
-    var add = function(){
-        var geocoder = new google.maps.Geocoder();
-        geocoder.geocode({ 'address': address, 'region': 'br' }, function (results, status) {
+function getMapByGeoLocation(address) {
+    var geocoder = new google.maps.Geocoder();
+    var lat = "";
+    var lng = "";
+    var latlng = [];
+
+    return latlng = setLatLng(address,function(lat,lng) {
+
+        calcusermarkerhash(lat,lng);
+
+    });
+
+    function setLatLng (address, callback) {
+        geocoder.geocode( { 'address': address, 'region': 'br' }, function(results, status) {
             if (status == google.maps.GeocoderStatus.OK) {
-                lat = results[0].geometry.location.lat();
-                lng = results[0].geometry.location.lng();
+                callback(results[0].geometry.location.lat(), results[0].geometry.location.lng());
             } else {
-                alert("Endereço não encontrado: " + status);
+                result = "Unable to find address: " + status;
             }
         });
-        return [lat,lng];
     }
 
-    var arr = Object();
 
-    arr.lat = add[0];
-    arr.lng = add[1];
-    alert(arr);
-    return arr;
 }
 
 
 function calcusermarkerhash(lat, lng) {
+
+    position = new Gmaps.map.createLatLng(lat,lng);
 
     Gmaps.map.serviceObject.setCenter(position);
 
@@ -29,11 +34,15 @@ function calcusermarkerhash(lat, lng) {
 
     usermarkhash['lat'] = lat;
     usermarkhash['lng'] = lng;
+
+    putUserMarker(usermarkhash);
 }
 
 function putUserMarker(marker) {
 
-    var position = new google.maps.LatLng(marker.lat, marker.lng);
+    alert(marker);
+
+    //var position = new google.maps.LatLng(marker.lat, marker.lng);
 
     Gmaps.map.replaceMarkers(usermarkhash);
 
