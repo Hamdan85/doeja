@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/inicial/searchlocal.js.erb" afterPath="$PROJECT_DIR$/app/views/inicial/searchlocal.js.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/receiver.rb" afterPath="$PROJECT_DIR$/app/models/receiver.rb" />
     </list>
     <ignored path="doeja.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -14,7 +14,7 @@
     <file path="/_receive.html.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371615383716" ignored="false" />
     <file path="/inicial_controller.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371700725577" ignored="false" />
     <file path="/receiver_controller.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1370198177067" ignored="false" />
-    <file path="/receiver.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372098677930" ignored="false" />
+    <file path="/receiver.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372102743466" ignored="false" />
     <file path="/geocoder.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371603819236" ignored="false" />
     <file path="/application.html.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371176881680" ignored="false" />
     <file path="$PROJECT_DIR$/../doeja 2/app/views/layouts/application.html.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1370406487594" ignored="false" />
@@ -80,19 +80,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="receiver.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="receiver.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/receiver.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="110" selection-start="995" selection-end="995" vertical-scroll-proportion="0.0">
+            <state line="34" column="53" selection-start="1066" selection-end="1066" vertical-scroll-proportion="0.504717">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="searchlocal.js.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="searchlocal.js.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/inicial/searchlocal.js.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="30" selection-start="697" selection-end="697" vertical-scroll-proportion="0.7820823">
+            <state line="25" column="30" selection-start="697" selection-end="697" vertical-scroll-proportion="-13.458333">
               <folding />
             </state>
           </provider>
@@ -137,10 +137,10 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/classie.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/tags.js" />
         <option value="$PROJECT_DIR$/app/controllers/inicial_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/receiver.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/searchplace.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/viewscript.js" />
         <option value="$PROJECT_DIR$/app/views/inicial/searchlocal.js.erb" />
+        <option value="$PROJECT_DIR$/app/models/receiver.rb" />
       </list>
     </option>
   </component>
@@ -848,13 +848,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/receiver.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="110" selection-start="995" selection-end="995" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/searchplace.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="53" column="8" selection-start="1492" selection-end="1522" vertical-scroll-proportion="0.0">
@@ -864,7 +857,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/inicial/searchlocal.js.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="30" selection-start="697" selection-end="697" vertical-scroll-proportion="0.7820823">
+        <state line="25" column="30" selection-start="697" selection-end="697" vertical-scroll-proportion="-13.458333">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/receiver.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="53" selection-start="1066" selection-end="1066" vertical-scroll-proportion="0.504717">
           <folding />
         </state>
       </provider>

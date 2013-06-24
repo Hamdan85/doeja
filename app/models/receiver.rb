@@ -32,7 +32,7 @@ class Receiver < ActiveRecord::Base
                     :msg => "Desculpe! Seu endereço não foi encontrado. Confira e tente novamente.magic_encode"
 
   def geocode?
-    (!address.blank? && (lat.blank? || lng.blank?)) || address_changed?
+    (!address.blank? && (latitude.blank? || longitude.blank?)) || address_changed?
   end
 
   def gmaps4rails_address
