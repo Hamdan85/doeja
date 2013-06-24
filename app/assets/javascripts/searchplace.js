@@ -2,34 +2,57 @@ function getMapByGeoLocation(address) {
     var geocoder = new google.maps.Geocoder();
     var lat = "";
     var lng = "";
-    geocoder.geocode( { 'address': address, 'region': 'br' }, function(results, status) {
-        if (status == google.maps.GeocoderStatus.OK) {
-            lat = results[0].geometry.location.lat();
-            lng = results[0].geometry.location.lng();
-        } else {
-            alert("Endereço não encontrado: " + status);
-        }
+    var latlng = [];
 
-        var position = new google.maps.LatLng(lat, lng)
+    return latlng = setLatLng(address,function(lat,lng) {
 
-
-        setTimeout(function() {
-            //var bounds = new google.maps.LatLngBounds(new google.maps.LatLng(lat, lng),new google.maps.LatLng(lat, lng));
-            Gmaps.map.serviceObject.setCenter(position);
-
-            Gmaps.map.clearMarkers();
-
-            Gmaps.map.createMarker({
-                Lat: lat,
-                Lng: lng,
-                draggable: true,
-                rich_marker: null,
-                marker_picture: ""
-            });
-
-            Gmaps.map.serviceObject.getZoom()
-        }, 50);
-
+        calcusermarkerhash(lat,lng);
 
     });
+
+    function setLatLng (address, callback) {
+        geocoder.geocode( { 'address': address, 'region': 'br' }, function(results, status) {
+            if (status == google.maps.GeocoderStatus.OK) {
+                callback(results[0].geometry.location.lat(), results[0].geometry.location.lng());
+            } else {
+                result = "Unable to find address: " + status;
+            }
+        });
+    }
+
+
+}
+
+
+function calcusermarkerhash(lat, lng) {
+
+    position = new Gmaps.map.createLatLng(lat,lng);
+
+    Gmaps.map.serviceObject.setCenter(position);
+
+    usermarkhash = {"title": "Você", "description": "Você está aqui!", "animation": 'BOUNCE', "picture": "/assets/user.png", "height": 64, "width": 64, "lat": "", "lng": ""};
+
+    usermarkhash['lat'] = lat;
+    usermarkhash['lng'] = lng;
+
+    putUserMarker(usermarkhash);
+}
+
+function putUserMarker(marker) {
+
+    alert(marker);
+
+    //var position = new google.maps.LatLng(marker.lat, marker.lng);
+
+    Gmaps.map.replaceMarkers(usermarkhash);
+
+    if (Gmaps.map.serviceObject.Mark == 1) {
+        //only one marker, choose the zoom level you expect
+        Gmaps.map.serviceObject.Zoom(10);
+    }
+    else {
+        //more than one marker, let's auto_zoom
+        Gmaps.map.auto_zoom = true;
+        Gmaps.map.adjustMapToBounds();
+    }
 }

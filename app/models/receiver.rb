@@ -27,7 +27,12 @@ class Receiver < ActiveRecord::Base
 
 
   acts_as_gmappable :normalized_address => :address,
-                    :process_geocoding => true
+                    :process_geocoding => :geocode?,
+                    :msg => "Desculpe! Seu endereço não foi encontrado. Confira e tente novamente."
+
+  def geocode?
+    (!address.blank? && (lat.blank? || lng.blank?)) || address_changed?
+  end
 
   def gmaps4rails_address
     "#{self.address},#{self.neighborhood},#{self.city}"
