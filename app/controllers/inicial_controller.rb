@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class InicialController < ApplicationController
 
   respond_to :json, :html

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Receiver < ActiveRecord::Base
   attr_accessible :address, :compl, :city, :description, :email, :kind, :name,
                   :neighborhood, :phone, :receiving,
@@ -28,7 +29,7 @@ class Receiver < ActiveRecord::Base
 
   acts_as_gmappable :normalized_address => :address,
                     :process_geocoding => :geocode?,
-                    :msg => "Desculpe! Seu endereço não foi encontrado. Confira e tente novamente."
+                    :msg => "Desculpe! Seu endereço não foi encontrado. Confira e tente novamente.magic_encode"
 
   def geocode?
     (!address.blank? && (lat.blank? || lng.blank?)) || address_changed?

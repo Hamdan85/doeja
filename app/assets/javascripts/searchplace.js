@@ -40,8 +40,6 @@ function calcusermarkerhash(lat, lng) {
 
 function putUserMarker(marker) {
 
-    alert(marker);
-
     //var position = new google.maps.LatLng(marker.lat, marker.lng);
 
     Gmaps.map.replaceMarkers(usermarkhash);

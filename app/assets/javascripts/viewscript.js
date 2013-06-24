@@ -158,11 +158,6 @@ $('#esq-3').change(function(){
     fulladdress = Street + ', ' + Number + ', ' + Neighborhood + ', ' + City;
     getMapByGeoLocation(fulladdress);
 });
-$('#esq-4').change(function(){
-    Number = document.getElementById('esq-4').value;
-    fulladdress = Street + ', ' + Number + ', ' + Neighborhood + ', ' + City;
-    getMapByGeoLocation(fulladdress);
-});
 
 $('#dir-1').change(function(){
     City = document.getElementById('dir-1').value;
@@ -179,10 +174,6 @@ $('#dir-3').change(function(){
     fulladdress = Street + ', ' + Number + ', ' + Neighborhood + ', ' + City;
     getMapByGeoLocation(fulladdress);
 });
-$('#dir-4').change(function(){
-    Number = document.getElementById('dir-4').value;
-    fulladdress = Street + ', ' + Number + ', ' + Neighborhood + ', ' + City;
-    getMapByGeoLocation(fulladdress);
-});
+
 
 $("#registro").formToWizard();

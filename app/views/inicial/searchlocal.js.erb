@@ -22,6 +22,5 @@ Gmaps.map.callback = function(){
 var new_markers = <%= raw @receiving2  %>;
 Gmaps.map.replaceMarkers(new_markers);
 Gmaps.map.listen_to_markers(new_markers);
-alert('agora');
 getMapByGeoLocation(fulladdress);
-Gmaps.map.serviceObject.getZoom();
+Gmaps.map.adjustMapToBounds();

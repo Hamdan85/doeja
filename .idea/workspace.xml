@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/searchplace.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/searchplace.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/viewscript.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/viewscript.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/inicial/searchlocal.js.erb" afterPath="$PROJECT_DIR$/app/views/inicial/searchlocal.js.erb" />
     </list>
     <ignored path="doeja.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -16,7 +14,7 @@
     <file path="/_receive.html.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371615383716" ignored="false" />
     <file path="/inicial_controller.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371700725577" ignored="false" />
     <file path="/receiver_controller.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1370198177067" ignored="false" />
-    <file path="/receiver.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371778100765" ignored="false" />
+    <file path="/receiver.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372098677930" ignored="false" />
     <file path="/geocoder.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371603819236" ignored="false" />
     <file path="/application.html.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371176881680" ignored="false" />
     <file path="$PROJECT_DIR$/../doeja 2/app/views/layouts/application.html.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1370406487594" ignored="false" />
@@ -38,6 +36,13 @@
     <file path="/application.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371603503179" ignored="false" />
     <file path="$PROJECT_DIR$/log/development.log" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371605167758" ignored="false" />
     <file path="/20130619041250_add_compl_to_receiver.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371615193049" ignored="false" />
+    <file path="$PROJECT_DIR$/config/routes.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372099266533" ignored="false" />
+    <file path="$PROJECT_DIR$/db/migrate/20130602040344_create_receivers.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372099266533" ignored="false" />
+    <file path="$PROJECT_DIR$/config/environments/development.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372099266533" ignored="false" />
+    <file path="$PROJECT_DIR$/config/environments/production.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372099266533" ignored="false" />
+    <file path="$PROJECT_DIR$/config/application.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372099266533" ignored="false" />
+    <file path="$PROJECT_DIR$/db/schema.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372099266533" ignored="false" />
+    <file path="$PROJECT_DIR$/config/environment.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372099266533" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,25 +65,34 @@
       <file leaf-file-name="inicial_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/inicial_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="49" selection-start="972" selection-end="972" vertical-scroll-proportion="0.0">
+            <state line="39" column="49" selection-start="999" selection-end="999" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="viewscript.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="viewscript.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/viewscript.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="187" column="9" selection-start="5793" selection-end="5793" vertical-scroll-proportion="1.6204189">
+            <state line="145" column="0" selection-start="4142" selection-end="4757" vertical-scroll-proportion="-1.2181818">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="searchlocal.js.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="receiver.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/receiver.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="110" selection-start="995" selection-end="995" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="searchlocal.js.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/inicial/searchlocal.js.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="18" selection-start="527" selection-end="527" vertical-scroll-proportion="-13.125">
+            <state line="25" column="30" selection-start="697" selection-end="697" vertical-scroll-proportion="0.7820823">
               <folding />
             </state>
           </provider>
@@ -87,7 +101,7 @@
       <file leaf-file-name="searchplace.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/searchplace.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="1" selection-start="1550" selection-end="1550" vertical-scroll-proportion="0.0">
+            <state line="53" column="8" selection-start="1492" selection-end="1522" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -124,9 +138,9 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/tags.js" />
         <option value="$PROJECT_DIR$/app/controllers/inicial_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/receiver.rb" />
-        <option value="$PROJECT_DIR$/app/views/inicial/searchlocal.js.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/searchplace.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/viewscript.js" />
+        <option value="$PROJECT_DIR$/app/views/inicial/searchlocal.js.erb" />
       </list>
     </option>
   </component>
@@ -354,28 +368,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doeja" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doeja" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -842,35 +834,37 @@
         <state line="67" column="2" selection-start="1370" selection-end="1370" vertical-scroll-proportion="0.79357797" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/receiver.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="98" selection-start="956" selection-end="956" vertical-scroll-proportion="0.58715594" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/inicial_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="49" selection-start="972" selection-end="972" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/inicial/searchlocal.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="18" selection-start="527" selection-end="527" vertical-scroll-proportion="-13.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/searchplace.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="1" selection-start="1550" selection-end="1550" vertical-scroll-proportion="0.0">
+        <state line="39" column="49" selection-start="999" selection-end="999" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/viewscript.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="187" column="9" selection-start="5793" selection-end="5793" vertical-scroll-proportion="1.6204189">
+        <state line="145" column="0" selection-start="4142" selection-end="4757" vertical-scroll-proportion="-1.2181818">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/receiver.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="110" selection-start="995" selection-end="995" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/searchplace.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="8" selection-start="1492" selection-end="1522" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/inicial/searchlocal.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="30" selection-start="697" selection-end="697" vertical-scroll-proportion="0.7820823">
           <folding />
         </state>
       </provider>

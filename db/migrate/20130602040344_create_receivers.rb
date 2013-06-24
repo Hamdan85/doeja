@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class CreateReceivers < ActiveRecord::Migration
   def change
     create_table :receivers do |t|
