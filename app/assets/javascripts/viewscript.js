@@ -16,7 +16,7 @@ $(".tags").magicSuggest({
     width: 220,
     maxSuggestions: 5,
     name: 'doar',
-    emptyText: '',
+    emptyText: 'Receber...',
     emptyTextCls: 'customEmptyTextCls',
     typeDelay: 1,
     data: '/tipodoacao'
@@ -27,7 +27,7 @@ $(".tag-receber").magicSuggest({
     width: 220,
     maxSuggestions: 5,
     name: 'doar',
-    emptyText: '',
+    emptyText: 'Doar...',
     emptyTextCls: 'customEmptyTextCls',
     typeDelay: 1,
     data: '/tipodoacao'
@@ -113,13 +113,13 @@ function doeJa(){
     classie.addClass( sumir, 'move');
     classie.addClass( infobox, 'sumir');
     classie.addClass( header, 'header');
-};
+}
 
 function registre(){
     classie.addClass( sumir, 'move1');
     classie.addClass( infobox, 'sumir');
     classie.addClass( header, 'header1');
-};
+}
 
 seta.onclick = function(){
     classie.removeClass( sumir, 'move');

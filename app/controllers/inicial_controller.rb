@@ -73,31 +73,17 @@ class InicialController < ApplicationController
 
     @parameters = params[:query].downcase
 
-    if params[:query].nil?
-      @tipodoacao = Receiver.all.uniq.pluck(:receiving)
-    else
+    #if params[:query].nil? or params[:query] == 'receber...' || params[:query] == ''
+    #  @tipodoacao = Receiver.all.uniq.pluck(:receiving)
+    #else
       @tipodoacao = Receiver.where('lower(receiving) LIKE :prefix', prefix: "%#{@parameters}%").uniq.pluck(:receiving)
-    end
+    #end
 
-    @tipodoacao = @tipodoacao.map! { |item| item[2..-3]}
-
-    x = 0
-
-    @tipodoacao.each do |item|
-      puts item
-      if x==0
-        @tipodoacao2 = "{id:#{x},name:'#{item}'}"
-      else
-        @tipodoacao2 = @tipodoacao2,"{id:#{x},name:'#{item}'}"
-      end
-      x=x+1
-    end
-
-    puts @tipodoacao2.as_json
+    puts @tipodoacao.inspect.gsub(']", "[', ',')[2..-3].as_json
 
     if @tipodoacao
       respond_to do |format|
-        format.json { render json: @tipodoacao2 }
+        format.json { render json: @tipodoacao.inspect.gsub(']", "[', ',')[2..-3].as_json }
       end
     end
 
