@@ -31,7 +31,19 @@ class InicialController < ApplicationController
 
   def searchlocal
 
-    @receiving2 = Receiver.where("lower(receiving) =? and lower(city) = ?", params[:Donate][:receiving].downcase,params[:Donate][:city].downcase).to_gmaps4rails do |address, marker|
+    #Geocoding Users Address
+
+    @useraddress = "#{params[:Donate][:address]}, #{params[:Donate][:neighborhood]}, #{params[:Donate][:city]}"
+
+    userlocation = Geocoder.coordinates(@useraddress)
+
+    #Assembling the JSON Hash of user's Marker
+
+    usermarkhash = {:title => 'Você', :description => 'Você está aqui!', :animation => 'BOUNCE', :picture => '/assets/user.png', :height => 64, :width => 64, :lat => userlocation[0], :lng => userlocation[1]}
+
+    #Looking for near place to receive the donation
+
+    @receiving = Receiver.where("lower(receiving) =? and lower(city) = ?", params[:Donate][:receiving].downcase,params[:Donate][:city].downcase).to_gmaps4rails do |address, marker|
       marker.infowindow render_to_string(:partial => "/shared/mapbox", :locals => { :address => address })
       marker.picture({
                          :picture => "/assets/bmarker.png",
@@ -41,16 +53,18 @@ class InicialController < ApplicationController
       marker.json(address)
     end
 
-    if @receiving2 == '[]'
+    if @receiving == '[]'
       @alert = 'Desculpe! Sem entradas para o pesquisado!'
     end
 
-    puts params[:Donate][:receiving]
+    #Adding user marker to Gmaps4Rails Marker
 
-    puts @receiving2
+    @receiving = JSON(JSON.parse(@receiving).push(usermarkhash))
+
+    #Responding to JSON request.
 
     respond_to do |format|
-      format.json { render json: @receiving2 }
+      format.json { render json: @receiving }
       format.js
     end
   end
@@ -65,9 +79,25 @@ class InicialController < ApplicationController
       @tipodoacao = Receiver.where('lower(receiving) LIKE :prefix', prefix: "%#{@parameters}%").uniq.pluck(:receiving)
     end
 
+    @tipodoacao = @tipodoacao.map! { |item| item[2..-3]}
+
+    x = 0
+
+    @tipodoacao.each do |item|
+      puts item
+      if x==0
+        @tipodoacao2 = "{id:#{x},name:'#{item}'}"
+      else
+        @tipodoacao2 = @tipodoacao2,"{id:#{x},name:'#{item}'}"
+      end
+      x=x+1
+    end
+
+    puts @tipodoacao2.as_json
+
     if @tipodoacao
       respond_to do |format|
-        format.json { render json: @tipodoacao.as_json }
+        format.json { render json: @tipodoacao2 }
       end
     end
 

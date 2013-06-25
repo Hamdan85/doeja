@@ -19,7 +19,7 @@ Gmaps.map.callback = function(){
     Gmaps.map.listen_to_markers(Gmaps.map.markers);
 }
 
-var new_markers = <%= raw @receiving2  %>;
+var new_markers = <%= raw @receiving  %>;
 Gmaps.map.replaceMarkers(new_markers);
 Gmaps.map.listen_to_markers(new_markers);
 getMapByGeoLocation(fulladdress);
