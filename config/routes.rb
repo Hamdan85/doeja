@@ -5,6 +5,7 @@ Doeja::Application.routes.draw do
 
 
   resources :inicial do
+    get :autocomplete_receiver_receiving, :on => :collection
     collection do
       get 'procura'
       get 'tipodoacao'

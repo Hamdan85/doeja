@@ -21,7 +21,7 @@
 
     <fieldset>
       <label>O QUE ACEITA RECEBER?</label>
-      <%= f.text_field :receiving, :class => 'tag-receber', :autocomplete => :off %><br />
+      <%= render :partial => '/shared/autocompletebox', :locals => {:f => f, :placeholder => 'Recebendo...' }  %>
       <small class="exemplo1">Ex: Roupas, dinheiro, amor...</small>
       <label>DESCREVA SEUS TRABALHOS</label>
       <%= f.text_area :description, :placeholder => 'Breve descrição...' %><br />

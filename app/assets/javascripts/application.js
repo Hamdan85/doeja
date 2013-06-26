@@ -11,7 +11,9 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
+//= require jquery-ui
 //= require jquery_ujs
+//= require autocomplete-rails
 //= require_tree ./gmaps4rails
 //= require classie
 //= require formToWizard
@@ -19,3 +21,5 @@
 //= require viewscript
 //= require gmapsvar
 //= require searchplace
+//= require_tree .
+

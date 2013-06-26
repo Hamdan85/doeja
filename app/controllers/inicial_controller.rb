@@ -1,6 +1,7 @@
 # -*- encoding : utf-8 -*-
 class InicialController < ApplicationController
 
+  autocomplete :receiver, :receiving
   respond_to :html, :json
 
   def index
@@ -65,7 +66,6 @@ class InicialController < ApplicationController
 
     respond_to do |format|
       format.json { render json: @receiving }
-      format.html
       format.js
     end
   end
