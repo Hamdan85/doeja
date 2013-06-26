@@ -12,6 +12,7 @@ class InicialController < ApplicationController
   end
 
   def create
+
     @Receiver = Receiver.new(params[:receiver])
     @Receiver.save!
 

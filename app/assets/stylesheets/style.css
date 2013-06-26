@@ -391,6 +391,7 @@ textarea{
 	font-size:18px;
 	font-weight: 200;
 	font-family: '4';
+    resize: none;
 }
 .prev{
 	color: white;

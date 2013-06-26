@@ -14,9 +14,20 @@ class Receiver < ActiveRecord::Base
     address = self.address
 
     self.city = self.city.downcase
-    self.kind = self.kind.downcase
     self.neighborhood = self.neighborhood.downcase
     self.receiving = self.receiving.downcase
+    
+    #Kind of Organization
+    puts self.kind
+    if (self.kind == '1')
+      self.kind = 'Pessoa Física'
+    elsif (self.kind == '2')
+      self.kind = 'Pessoa Jurídica'
+    elsif (self.kind == '3')
+      self.kind = 'ONG'
+    elsif (self.kind == '4')
+      self.kind = 'Centro Religioso'
+    end
   end
 
   geocoded_by :gmaps4rails_address
