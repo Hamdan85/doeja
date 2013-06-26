@@ -1,7 +1,7 @@
 # -*- encoding : utf-8 -*-
 class InicialController < ApplicationController
 
-  respond_to :json, :html
+  respond_to :html, :json
 
   def index
 
@@ -44,7 +44,7 @@ class InicialController < ApplicationController
     #Looking for near place to receive the donation
 
     @receiving = Receiver.where("lower(receiving) =? and lower(city) = ?", params[:Donate][:receiving].downcase,params[:Donate][:city].downcase).to_gmaps4rails do |address, marker|
-      marker.infowindow render_to_string(:partial => "/shared/mapbox", :locals => { :address => address })
+      marker.infowindow render_to_string(:partial => '/shared/mapbox', :locals => { :address => address })
       marker.picture({
                          :picture => "/assets/bmarker.png",
                          :width   => 32,
@@ -65,6 +65,7 @@ class InicialController < ApplicationController
 
     respond_to do |format|
       format.json { render json: @receiving }
+      format.html
       format.js
     end
   end

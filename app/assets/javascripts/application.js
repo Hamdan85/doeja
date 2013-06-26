@@ -16,8 +16,6 @@
 //= require classie
 //= require formToWizard
 //= require modernizr.custom
-//= require tags
 //= require viewscript
 //= require gmapsvar
 //= require searchplace
-//= require_tree .
