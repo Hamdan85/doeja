@@ -47,7 +47,7 @@ function putUserMarker(marker) {
     //if (Gmaps.map.serviceObject.Mark == 1) {
         //only one marker, choose the zoom level you expect
         Gmaps.map.auto_zoom = false;
-    setTimeout(function() { Gmaps.map.serviceObject.setZoom(16);}, 50);
+        setTimeout(function() { Gmaps.map.serviceObject.setZoom(16);}, 50);
     //}
     //else {
     //    //more than one marker, let's auto_zoom

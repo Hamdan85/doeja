@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/shared/_autocompletebox.html.erb" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/tags.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_donate.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_donate.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_map.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_map.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_receive.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_receive.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/doeja.iml" afterPath="$PROJECT_DIR$/.idea/doeja.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/inicial_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/inicial_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/jquery-ui-1.10.3.custom.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/jquery-ui-1.10.3.custom.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/inicial/searchlocal.js.erb" afterPath="$PROJECT_DIR$/app/views/inicial/searchlocal.js.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/searchplace.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/searchplace.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="doeja.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,7 +32,7 @@
     <file path="/fla_not.js.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371179166668" ignored="false" />
     <file path="/flash_notice.js" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371349773666" ignored="false" />
     <file path="/create.js.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371350786644" ignored="false" />
-    <file path="/searchlocal.js.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372138256754" ignored="false" />
+    <file path="/searchlocal.js.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372222095807" ignored="false" />
     <file path="/centerplace.js" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371350338577" ignored="false" />
     <file path="/20130602040344_create_receivers.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371600590456" ignored="false" />
     <file path="/application.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371603503179" ignored="false" />
@@ -52,7 +42,7 @@
     <file path="$PROJECT_DIR$/config/environments/development.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372099266533" ignored="false" />
     <file path="$PROJECT_DIR$/config/environments/production.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372099266533" ignored="false" />
     <file path="/tags.js" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372203665494" ignored="false" />
-    <file path="/jquery-ui-1.10.3.custom.css" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372218724219" ignored="false" />
+    <file path="/jquery-ui-1.10.3.custom.css" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372222270257" ignored="false" />
     <file path="/_autocompletebox.html.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372220337960" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,37 +63,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="inicial_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/inicial_controller.rb">
+      <file leaf-file-name="jquery-ui-1.10.3.custom.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/jquery-ui-1.10.3.custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="185" column="19" selection-start="4694" selection-end="4694" vertical-scroll-proportion="0.37">
+              <folding>
+                <element signature="e#11869#11952#2" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_receive.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/shared/_receive.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="108" selection-start="1519" selection-end="1519" vertical-scroll-proportion="-6.25">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_map.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/shared/_map.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="19" selection-start="578" selection-end="578" vertical-scroll-proportion="-8.75">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="searchplace.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="searchplace.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/searchplace.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="62" selection-start="1442" selection-end="1442" vertical-scroll-proportion="0.55334985">
+            <state line="48" column="8" selection-start="1351" selection-end="1455" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -112,25 +86,7 @@
       <file leaf-file-name="searchlocal.js.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/inicial/searchlocal.js.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="2.5">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_donate.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/shared/_donate.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="98" selection-start="890" selection-end="890" vertical-scroll-proportion="-8.125">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_autocompletebox.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/shared/_autocompletebox.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="162" selection-start="162" selection-end="162" vertical-scroll-proportion="-0.0">
+            <state line="6" column="0" selection-start="167" selection-end="167" vertical-scroll-proportion="-3.75">
               <folding />
             </state>
           </provider>
@@ -154,7 +110,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/assets/javascripts/modernizr.custom.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/viewscript.js" />
         <option value="$PROJECT_DIR$/app/views/shared/_mapbox.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
@@ -162,7 +117,6 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/inicial_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/jquery-ui-1.10.3.custom.min.css" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/jquery-ui-1.10.3.custom.css" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/shared/_autocompletebox.html.erb" />
@@ -170,6 +124,8 @@
         <option value="$PROJECT_DIR$/app/views/shared/_donate.html.erb" />
         <option value="$PROJECT_DIR$/app/views/shared/_map.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/searchplace.js" />
+        <option value="$PROJECT_DIR$/app/views/inicial/searchlocal.js.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/jquery-ui-1.10.3.custom.css" />
       </list>
     </option>
   </component>
@@ -768,23 +724,9 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_mapbox.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="36" selection-start="268" selection-end="268" vertical-scroll-proportion="0.21686748">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="494" column="0" selection-start="9228" selection-end="9228" vertical-scroll-proportion="0.36619717">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/inicial_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -793,15 +735,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/jquery-ui-1.10.3.custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="189" column="17" selection-start="4753" selection-end="4753" vertical-scroll-proportion="0.55172414">
-          <folding>
-            <element signature="e#11872#11955#2" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -835,27 +768,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_autocompletebox.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="162" selection-start="162" selection-end="162" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_donate.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="98" selection-start="890" selection-end="890" vertical-scroll-proportion="-8.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_receive.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="108" selection-start="1519" selection-end="1519" vertical-scroll-proportion="-6.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/viewscript.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -865,22 +777,66 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/shared/_map.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="19" selection-start="578" selection-end="578" vertical-scroll-proportion="-8.75">
+        <state line="14" column="62" selection-start="584" selection-end="584" vertical-scroll-proportion="0.5060241">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_receive.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="108" selection-start="1519" selection-end="1519" vertical-scroll-proportion="0.37313432">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/inicial_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="75" selection-end="75" vertical-scroll-proportion="0.07042254">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_donate.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="98" selection-start="890" selection-end="890" vertical-scroll-proportion="0.48507464">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_autocompletebox.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="162" selection-start="162" selection-end="162" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/gmaps4rails.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/inicial/searchlocal.js.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="2.5">
+        <state line="6" column="0" selection-start="167" selection-end="167" vertical-scroll-proportion="-3.75">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/searchplace.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="62" selection-start="1442" selection-end="1442" vertical-scroll-proportion="0.55334985">
+        <state line="48" column="8" selection-start="1351" selection-end="1455" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/jquery-ui-1.10.3.custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="185" column="19" selection-start="4694" selection-end="4694" vertical-scroll-proportion="0.37">
+          <folding>
+            <element signature="e#11869#11952#2" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

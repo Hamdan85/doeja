@@ -3,6 +3,12 @@
 <% end %>
 
 Gmaps.map.listen_to_markers = function(markers){
+    if (markers.length == 1) {
+        Gmaps.map.auto_zoom = false;
+        setTimeout(function() { Gmaps.map.serviceObject.setZoom(16);}, 50);
+    } else {
+        Gmaps.map.adjustMapToBounds();
+    }
     for(var i = 0; i < markers.length; i++){
         marker = markers[i];
         Gmaps.map.event.addListener(marker.serviceObject, 'click',
@@ -22,5 +28,3 @@ Gmaps.map.callback = function(){
 var new_markers = <%= raw @receiving  %>;
 Gmaps.map.replaceMarkers(new_markers);
 Gmaps.map.listen_to_markers(new_markers);
-getMapByGeoLocation(fulladdress);
-Gmaps.map.adjustMapToBounds();
