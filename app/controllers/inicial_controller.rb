@@ -18,6 +18,7 @@ class InicialController < ApplicationController
 
     respond_to do |format|
       if @Receiver.save
+        UserRegistration.userRegister(@Receiver).deliver
         @notice = 'Local salvo com sucesso. Muito Obrigado!!'
         format.html
         format.js
