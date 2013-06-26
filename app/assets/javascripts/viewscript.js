@@ -67,12 +67,6 @@ function disableOther( button ) {
         classie.toggle( showRightPush, 'disabled' );
     }
 }
-/*
-$(function() {
-    $( "#tabs" ).tabs({ active: 0 });
-});
-*/
-
 
 function doeJa(){
     classie.addClass( sumir, 'move');
@@ -90,12 +84,14 @@ seta.onclick = function(){
     classie.removeClass( sumir, 'move');
     classie.removeClass( infobox, 'sumir');
     classie.removeClass( header, 'header');
+    clearFields();
 };
 
 seta1.onclick = function(){
     classie.removeClass( sumir, 'move1');
     classie.removeClass( infobox, 'sumir');
     classie.removeClass( header, 'header1');
+    clearFields();
 };
 
 $('.esq').bind("keydown", doeJa);
@@ -142,3 +138,14 @@ $('#dir-3').change(function(){
 
 
 $("#registro").formToWizard();
+
+function clearFields() {
+    Gmaps.map.clearMarkers(Gmaps.map.markers);
+    $('#dir-1').val("");
+    $('#dir-2').val("");
+    $('#dir-3').val("");
+    $('#esq-1').val("");
+    $('#esq-2').val("");
+    $('#esq-3').val("");
+    flash_notice('Limpando campos...');
+}

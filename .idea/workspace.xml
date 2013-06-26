@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_receive.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_receive.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/inicial_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/inicial_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/receiver.rb" afterPath="$PROJECT_DIR$/app/models/receiver.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/style.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/viewscript.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/viewscript.js" />
     </list>
     <ignored path="doeja.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,7 +25,7 @@
     <file path="/_donate.html.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372220386761" ignored="false" />
     <file path="/_mapbox.html.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371663626232" ignored="false" />
     <file path="/_map.html.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371515095246" ignored="false" />
-    <file path="/viewscript.js" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372202343651" ignored="false" />
+    <file path="/viewscript.js" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372226768049" ignored="false" />
     <file path="$PROJECT_DIR$/../gmapsexample/Gemfile" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371008524827" ignored="false" />
     <file path="/fla_not.js.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371179166668" ignored="false" />
     <file path="/flash_notice.js" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371349773666" ignored="false" />
@@ -65,19 +61,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="inicial_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/inicial_controller.rb">
+      <file leaf-file-name="viewscript.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/viewscript.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="4" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0">
+            <state line="149" column="11" selection-start="4861" selection-end="4861" vertical-scroll-proportion="0.89772725">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="receiver.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/models/receiver.rb">
+      <file leaf-file-name="_receive.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/shared/_receive.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="9" selection-start="653" selection-end="653" vertical-scroll-proportion="0.23376623">
+            <state line="17" column="39" selection-start="1236" selection-end="1241" vertical-scroll-proportion="-10.625">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_donate.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/shared/_donate.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="98" selection-start="890" selection-end="890" vertical-scroll-proportion="-8.125">
               <folding />
             </state>
           </provider>
@@ -101,7 +106,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/jquery-ui-1.10.3.custom.min.css" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
@@ -117,6 +121,7 @@
         <option value="$PROJECT_DIR$/app/views/shared/_receive.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/inicial_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/receiver.rb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/viewscript.js" />
       </list>
     </option>
   </component>
@@ -301,6 +306,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doeja" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doeja" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -715,23 +742,9 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/viewscript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/shared/_map.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="62" selection-start="584" selection-end="584" vertical-scroll-proportion="0.5060241">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_donate.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="98" selection-start="890" selection-end="890" vertical-scroll-proportion="0.48507464">
           <folding />
         </state>
       </provider>
@@ -784,20 +797,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_autocompletebox.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="162" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_receive.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="129" selection-start="528" selection-end="609" vertical-scroll-proportion="0.33498758">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="393" column="17" selection-start="7374" selection-end="7374" vertical-scroll-proportion="0.6309227">
@@ -821,16 +820,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/inicial_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/receiver.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="4" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0">
+        <state line="23" column="9" selection-start="653" selection-end="653" vertical-scroll-proportion="0.23376623">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/receiver.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/inicial_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="9" selection-start="653" selection-end="653" vertical-scroll-proportion="0.23376623">
+        <state line="15" column="4" selection-start="223" selection-end="223" vertical-scroll-proportion="0.26229507">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_autocompletebox.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="162" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_receive.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="39" selection-start="1236" selection-end="1241" vertical-scroll-proportion="-10.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_donate.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="98" selection-start="890" selection-end="890" vertical-scroll-proportion="-8.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/viewscript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="149" column="11" selection-start="4861" selection-end="4861" vertical-scroll-proportion="0.89772725">
           <folding />
         </state>
       </provider>
