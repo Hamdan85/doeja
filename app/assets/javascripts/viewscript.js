@@ -1,38 +1,3 @@
-$(".tag-tipo").magicSuggest({
-    useTabKey: true,
-    width: 220,
-    maxSelection: 1,
-    maxSuggestions: 3,
-    name: 'voce',
-    emptyText: '',
-    emptyTextCls: 'customEmptyTextCls',
-    typeDelay: 0,
-    maxEntryRenderer: 'Por favor escolha somente um',
-    data: 'Instituição, Pessoa Física, Pessoa Jurídica, ONG'
-});
-
-$(".tags").magicSuggest({
-    useTabKey: true,
-    width: 220,
-    maxSuggestions: 5,
-    name: 'doar',
-    emptyText: 'Receber...',
-    emptyTextCls: 'customEmptyTextCls',
-    typeDelay: 1,
-    data: '/tipodoacao'
-});
-
-$(".tag-receber").magicSuggest({
-    useTabKey: true,
-    width: 220,
-    maxSuggestions: 5,
-    name: 'doar',
-    emptyText: 'Doar...',
-    emptyTextCls: 'customEmptyTextCls',
-    typeDelay: 1,
-    data: '/tipodoacao'
-});
-
 var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
     menuRight = document.getElementById( 'cbp-spmenu-s2' ),
     menuBottom = document.getElementById( 'cbp-spmenu-s4' ),

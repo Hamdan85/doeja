@@ -44,13 +44,14 @@ function putUserMarker(marker) {
 
     Gmaps.map.replaceMarkers(usermarkhash);
 
-    if (Gmaps.map.serviceObject.Mark == 1) {
+    //if (Gmaps.map.serviceObject.Mark == 1) {
         //only one marker, choose the zoom level you expect
-        Gmaps.map.serviceObject.Zoom(10);
-    }
-    else {
-        //more than one marker, let's auto_zoom
-        Gmaps.map.auto_zoom = true;
-        Gmaps.map.adjustMapToBounds();
-    }
+        Gmaps.map.auto_zoom = false;
+        setTimeout(function() { Gmaps.map.serviceObject.setZoom(16);}, 50);
+    //}
+    //else {
+    //    //more than one marker, let's auto_zoom
+    //    Gmaps.map.auto_zoom = true;
+    //    Gmaps.map.adjustMapToBounds();
+    //}
 }

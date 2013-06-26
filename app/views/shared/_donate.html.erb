@@ -11,7 +11,7 @@
 
 
     <label>O QUE QUER DOAR?</label>
-    <%= f.text_field :receiving, :class => 'tags', :id => 'donatekind', :autocomplete => :off %><br />
+    <%= render :partial => '/shared/autocompletebox', :locals => {:f => f, :placeholder => 'Doando...'}  %>
     <small class="exemplo1">Ex: Roupas, dinheiro, amor...</small>
     <%= f.submit :class => 'botao', :value => 'DOAR' %>
 
