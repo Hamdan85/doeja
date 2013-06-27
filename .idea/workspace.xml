@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_mapbox.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_mapbox.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/inicial/searchlocal.js.erb" afterPath="$PROJECT_DIR$/app/views/inicial/searchlocal.js.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="doeja.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,7 +30,7 @@
     <file path="/fla_not.js.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371179166668" ignored="false" />
     <file path="/flash_notice.js" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371349773666" ignored="false" />
     <file path="/create.js.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371350786644" ignored="false" />
-    <file path="/searchlocal.js.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372361927360" ignored="false" />
+    <file path="/searchlocal.js.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372364592430" ignored="false" />
     <file path="/centerplace.js" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371350338577" ignored="false" />
     <file path="/20130602040344_create_receivers.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371600590456" ignored="false" />
     <file path="/application.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371603503179" ignored="false" />
@@ -68,7 +66,7 @@
       <file leaf-file-name="searchlocal.js.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/inicial/searchlocal.js.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="73" selection-start="748" selection-end="748" vertical-scroll-proportion="0.74380165">
+            <state line="20" column="72" selection-start="763" selection-end="763" vertical-scroll-proportion="0.8264463">
               <folding />
             </state>
           </provider>
@@ -817,7 +815,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/inicial/searchlocal.js.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="73" selection-start="748" selection-end="748" vertical-scroll-proportion="0.74380165">
+        <state line="20" column="72" selection-start="763" selection-end="763" vertical-scroll-proportion="0.8264463">
           <folding />
         </state>
       </provider>

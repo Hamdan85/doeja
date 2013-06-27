@@ -12,11 +12,13 @@ Gmaps.map.listen_to_markers = function(markers){
     for(var i = 0; i < markers.length; i++){
         marker = markers[i];
 
-        Gmaps.map.event.addEventListener(Gmaps.map.map, 'mouseover', function (marker) {
+        google.maps.event.addEventListener(Gmaps.map.serviceObject, 'mouseover', function (e) {
             marker.infowindow.open(Gmaps.map.map, marker.serviceObject);
         });
-        Gmaps.map.event.addEventListener(Gmaps.map.map, 'mouseout', function (marker) {
-            marker.infowindow.close(Gmaps.map.map, marker.serviceObject);
+
+
+        google.maps.event.addEventListener(Gmaps.map.serviceObject, 'mouseout', function (e) {
+            marker.infowindow.open(Gmaps.map.map, marker.serviceObject);
         });
     }
 }
