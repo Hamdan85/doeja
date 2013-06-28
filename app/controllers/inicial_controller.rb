@@ -12,8 +12,8 @@ class InicialController < ApplicationController
 
   def create
     @Receiver = Receiver.new(params[:receiver])
-    @Receiver.push(:token => SecureRandom.urlsafe_base64)
-    puts @receiver[:token]
+    @Receiver.token = SecureRandom.urlsafe_base64
+
     @Receiver.save!
 
     respond_to do |format|
@@ -107,6 +107,7 @@ class InicialController < ApplicationController
 
 
     respond_to do |format|
+      format.html { render root_url }
       format.js
     end
   end
