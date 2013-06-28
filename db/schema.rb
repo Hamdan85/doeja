@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130619041250) do
+ActiveRecord::Schema.define(:version => 20130628131138) do
 
   create_table "receivers", :force => true do |t|
     t.string   "kind"
@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(:version => 20130619041250) do
     t.float    "longitude"
     t.boolean  "gmaps"
     t.string   "compl"
+    t.string   "token"
   end
 
 end

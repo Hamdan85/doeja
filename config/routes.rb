@@ -8,11 +8,13 @@ Doeja::Application.routes.draw do
     collection do
       get 'procura'
       get :donationkind
+      get :destroylocal
     end
   end
 
   match '/tipodoacao' => 'inicial#donationkind'
   match '/procura' => 'inicial#searchlocal'
+  match '/deletarlocal' => 'inicial#destroylocal'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

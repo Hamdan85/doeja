@@ -1,19 +1,21 @@
 # -*- encoding : utf-8 -*-
 class InicialController < ApplicationController
-
-
   respond_to :html, :json
 
   def index
 
   end
+
   def new
     @Receiver = Receiver.new
   end
 
   def create
-
     @Receiver = Receiver.new(params[:receiver])
+    @Receiver.token = loop do
+      random_token = SecureRandom.urlsafe_base64
+      break random_token unless Receiver.where(token: random_token).exists?
+    end
     @Receiver.save!
 
     respond_to do |format|
@@ -28,8 +30,6 @@ class InicialController < ApplicationController
         format.js
       end
     end
-
-
   end
 
   def searchlocal
@@ -76,6 +76,7 @@ class InicialController < ApplicationController
 
     parameters = params[:term].downcase
 
+
     if parameters.nil? or parameters == 'receber...' or parameters == ''
       @tipodoacao = Receiver.all
     else
@@ -95,6 +96,22 @@ class InicialController < ApplicationController
       end
     end
 
+  end
+
+  def destroylocal
+    @local = Receiver.find_by_token(params[:deletetoken])
+    if params[:deletetoken] == @local.token
+      @local.destroy
+      @notice = 'Local deletado com sucesso!'
+    else
+      @notice =  'Token Inválido'
+    end
+
+
+    respond_to do |format|
+      format.html { render root_url }
+      format.js
+    end
   end
 
 end
