@@ -9,22 +9,32 @@ Gmaps.map.listen_to_markers = function(markers){
     } else {
         Gmaps.map.adjustMapToBounds();
     }
-    for(var i = 0; i < markers.length; i++){
-        marker = markers[i];
-        Gmaps.map.event.addListener(marker.serviceObject, 'click',
-                (function(marker){
-                    return function(){
+    addlisteners(markers, 0);
+}
 
-                    }
-                })(marker)
-        );
+function addlisteners(markers,recursive) {
+
+    if (recursive <= markers.length-1) {
+        google.maps.event.addListener(markers[recursive].serviceObject, 'mouseover', function () {
+            markers[recursive].infowindow.open(Gmaps.map.map, markers[recursive].serviceObject);
+        });
+
+
+        google.maps.event.addListener(markers[recursive].serviceObject, 'mouseout', (function () {
+            markers[recursive].infowindow.close(Gmaps.map.map, markers[recursive].serviceObject);
+        }));
+    }
+
+
+    if (recursive != (markers.length)) {
+
+            addlisteners(markers, recursive+1);
     }
 }
 
-Gmaps.map.callback = function(){
-    Gmaps.map.listen_to_markers(Gmaps.map.markers);
-}
-
 var new_markers = <%= raw @receiving  %>;
-Gmaps.map.replaceMarkers(new_markers);
-Gmaps.map.listen_to_markers(new_markers);
+setTimeout(function () {
+    Gmaps.map.replaceMarkers(new_markers);
+    Gmaps.map.listen_to_markers(new_markers);
+}, 200);
+
