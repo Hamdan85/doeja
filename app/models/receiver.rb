@@ -6,16 +6,15 @@ class Receiver < ActiveRecord::Base
 
   before_save :adjustdatabase
 
-  before_validation :createtokenfordelete
+  #before_validation :createtokenfordelete
 
   validates :kind, :presence => true
   validates :address, :presence => true
   validates :token, :presence => true, :uniqueness => true
 
-  def createtokenfordelete
-    self.token = SecureRandom.urlsafe_base64
-
-  end
+  #def createtokenfordelete
+  #  self.token = SecureRandom.urlsafe_base64
+  #end
 
   def adjustdatabase
 
