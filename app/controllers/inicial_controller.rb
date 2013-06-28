@@ -1,7 +1,7 @@
 # -*- encoding : utf-8 -*-
 class InicialController < ApplicationController
 
-  autocomplete :receiver, :receiving
+
   respond_to :html, :json
 
   def index
@@ -46,8 +46,6 @@ class InicialController < ApplicationController
 
     #Looking for near place to receive the donation
 
-    x=0
-
     @receiving = Receiver.where("lower(receiving) =? and lower(city) = ?", params[:Donate][:receiving].downcase,params[:Donate][:city].downcase).to_gmaps4rails do |address, marker|
       marker.infowindow render_to_string(:partial => '/shared/mapbox', :locals => { :address => address })
       marker.picture({
@@ -74,23 +72,31 @@ class InicialController < ApplicationController
     end
   end
 
-  def tipodoacao
+  def donationkind
 
-    @parameters = params[:query].downcase
+    parameters = params[:term].downcase
 
-    #if params[:query].nil? or params[:query] == 'receber...' || params[:query] == ''
-    #  @tipodoacao = Receiver.all.uniq.pluck(:receiving)
-    #else
-      @tipodoacao = Receiver.where('lower(receiving) LIKE :prefix', prefix: "%#{@parameters}%").uniq.pluck(:receiving)
-    #end
+    if parameters.nil? or parameters == 'receber...' or parameters == ''
+      @tipodoacao = Receiver.all
+    else
+      @tipodoacao = Receiver.where('lower(receiving) LIKE :prefix', prefix: "%#{parameters}%")
+    end
 
-    puts @tipodoacao.inspect.gsub(']", "[', ',')[2..-3].as_json
+    puts @tipodoacao.uniq.pluck(:receiving).to_s
+
+
+    json = @tipodoacao.uniq.pluck(:receiving).collect do |item|
+      { "label" => item }
+    end
+
+    puts json
 
     if @tipodoacao
       respond_to do |format|
-        format.json { render json: @tipodoacao.inspect.gsub(']", "[', ',')[2..-3].as_json }
+        format.json { render json: json }
       end
     end
 
   end
+
 end

@@ -50,4 +50,5 @@ class Receiver < ActiveRecord::Base
     "#{self.address},#{self.neighborhood},#{self.city}"
   end
 
+
 end

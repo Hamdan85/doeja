@@ -5,15 +5,14 @@ Doeja::Application.routes.draw do
 
 
   resources :inicial do
-    get :autocomplete_receiver_receiving, :on => :collection
     collection do
       get 'procura'
-      get 'tipodoacao'
+      get :donationkind
     end
   end
 
+  match '/tipodoacao' => 'inicial#donationkind'
   match '/procura' => 'inicial#searchlocal'
-  match '/tipodoacao' => 'inicial#tipodoacao'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
