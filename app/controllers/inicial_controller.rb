@@ -12,8 +12,10 @@ class InicialController < ApplicationController
 
   def create
     @Receiver = Receiver.new(params[:receiver])
-    @Receiver.token = SecureRandom.urlsafe_base64
-
+    @Receiver.token = loop do
+      random_token = SecureRandom.urlsafe_base64
+      break random_token unless Receiver.where(token: random_token).exists?
+    end
     @Receiver.save!
 
     respond_to do |format|
