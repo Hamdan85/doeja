@@ -12,7 +12,7 @@
     <file path="/development.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1370143162636" ignored="false" />
     <file path="/a.dummy" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372223479711" ignored="false" />
     <file path="/_receive.html.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372224510425" ignored="false" />
-    <file path="/inicial_controller.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372441765163" ignored="false" />
+    <file path="/inicial_controller.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372444242026" ignored="false" />
     <file path="/receiver_controller.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1370198177067" ignored="false" />
     <file path="/receiver.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372438167671" ignored="false" />
     <file path="/geocoder.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372113970509" ignored="false" />
@@ -46,6 +46,10 @@
     <file path="/destroylocal.js.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372431080420" ignored="false" />
     <file path="$PROJECT_DIR$/db/migrate/20130619041250_add_compl_to_receiver.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372435473953" ignored="false" />
     <file path="$PROJECT_DIR$/db/migrate/20130602040344_create_receivers.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372435473953" ignored="false" />
+    <file path="$PROJECT_DIR$/db/migrate/20130628131138_add_token_to_receiver.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372442415164" ignored="false" />
+    <file path="$PROJECT_DIR$/db/schema.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372442415164" ignored="false" />
+    <file path="$PROJECT_DIR$/app/views/inicial/destroylocal.js.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372442415164" ignored="false" />
+    <file path="$PROJECT_DIR$/app/views/user_registration/userRegister.html.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372442415165" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +72,7 @@
       <file leaf-file-name="inicial_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/inicial_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="7" selection-start="391" selection-end="391" vertical-scroll-proportion="0.5902778">
+            <state line="111" column="33" selection-start="2956" selection-end="2956" vertical-scroll-proportion="0.6875">
               <folding />
             </state>
           </provider>
@@ -844,7 +848,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/inicial_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="7" selection-start="391" selection-end="391" vertical-scroll-proportion="0.5902778">
+        <state line="111" column="33" selection-start="2956" selection-end="2956" vertical-scroll-proportion="0.6875">
           <folding />
         </state>
       </provider>

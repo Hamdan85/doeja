@@ -109,7 +109,7 @@ class InicialController < ApplicationController
 
 
     respond_to do |format|
-      format.html { render root_url }
+      format.html  { redirect_to root_url }
       format.js
     end
   end
