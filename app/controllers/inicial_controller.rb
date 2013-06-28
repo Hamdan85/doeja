@@ -82,14 +82,12 @@ class InicialController < ApplicationController
       @tipodoacao = Receiver.where('lower(receiving) LIKE :prefix', prefix: "%#{parameters}%")
     end
 
-    puts @tipodoacao.uniq.pluck(:receiving).to_s
-
-
-    json = @tipodoacao.uniq.pluck(:receiving).collect do |item|
-      { "label" => item }
+    x = 0
+    json = []
+    @tipodoacao.uniq.pluck(:receiving).each do |item|
+        json.push({"id" => x, "label" => item })
+        x = x+1
     end
-
-    puts json
 
     if @tipodoacao
       respond_to do |format|

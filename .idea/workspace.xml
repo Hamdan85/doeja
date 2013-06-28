@@ -2,22 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_autocompletebox.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_autocompletebox.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/autocomplete-rails.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/autocomplete-rails.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/inicial_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/inicial_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/receiver.rb" afterPath="$PROJECT_DIR$/app/models/receiver.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="doeja.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372351436411" ignored="false" />
+    <file path="/Dummy.txt" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372390982426" ignored="false" />
     <file path="/routes.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372389307689" ignored="false" />
     <file path="/index.html.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1370490478414" ignored="false" />
     <file path="/development.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1370143162636" ignored="false" />
     <file path="/a.dummy" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372223479711" ignored="false" />
     <file path="/_receive.html.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372224510425" ignored="false" />
-    <file path="/inicial_controller.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372390585299" ignored="false" />
+    <file path="/inicial_controller.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372392767227" ignored="false" />
     <file path="/receiver_controller.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1370198177067" ignored="false" />
     <file path="/receiver.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372225615111" ignored="false" />
     <file path="/geocoder.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372113970509" ignored="false" />
@@ -68,19 +65,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="inicial_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="inicial_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/inicial_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="8" selection-start="2350" selection-end="2350" vertical-scroll-proportion="0.0">
+            <state line="89" column="7" selection-start="2377" selection-end="2377" vertical-scroll-proportion="0.54651165">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="autocomplete-rails.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="autocomplete-rails.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/autocomplete-rails.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="30" selection-start="2901" selection-end="2901" vertical-scroll-proportion="-0.20361991">
+            <state line="136" column="0" selection-start="5563" selection-end="5563" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -138,8 +135,8 @@
         <option value="$PROJECT_DIR$/app/models/receiver.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/shared/_autocompletebox.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/inicial_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/autocomplete-rails.js" />
+        <option value="$PROJECT_DIR$/app/controllers/inicial_controller.rb" />
       </list>
     </option>
   </component>
@@ -185,7 +182,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="2" />
+    <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -201,7 +198,6 @@
     </navigator>
     <panes>
       <pane id="RailsProjectView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -384,19 +380,20 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="editing.templates" />
     <property name="ChangesBrowser.SHOW_FLATTEN" value="true" />
+    <property name="options.lastSelected" value="editing.templates" />
+    <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../blah" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -721,11 +718,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923076" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3021309" sideWeight="0.72307694" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3066971" sideWeight="0.7246154" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35185185" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2769231" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2753846" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -844,16 +841,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/gmapsvar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="2" selection-start="1370" selection-end="1370" vertical-scroll-proportion="0.7963801">
-          <folding />
-        </state>
+        <state line="67" column="2" selection-start="1370" selection-end="1370" vertical-scroll-proportion="0.7963801" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/shared/_mapbox.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="37" selection-start="290" selection-end="290" vertical-scroll-proportion="0.32296652">
-          <folding />
-        </state>
+        <state line="9" column="37" selection-start="290" selection-end="290" vertical-scroll-proportion="0.32296652" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/inicial/searchlocal.js.erb">
@@ -877,13 +870,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_autocompletebox.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="47" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="46" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0">
@@ -891,19 +877,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/inicial_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_autocompletebox.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="8" selection-start="2350" selection-end="2350" vertical-scroll-proportion="0.0">
+        <state line="0" column="47" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/autocomplete-rails.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="30" selection-start="2901" selection-end="2901" vertical-scroll-proportion="-0.20361991">
+        <state line="136" column="0" selection-start="5563" selection-end="5563" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/inicial_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="7" selection-start="2377" selection-end="2377" vertical-scroll-proportion="0.54651165">
+          <folding />
         </state>
       </provider>
     </entry>
