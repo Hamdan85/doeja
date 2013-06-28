@@ -17,6 +17,7 @@ function addlisteners(markers,recursive) {
     if (recursive <= markers.length-1) {
         google.maps.event.addListener(markers[recursive].serviceObject, 'mouseover', function () {
             markers[recursive].infowindow.open(Gmaps.map.map, markers[recursive].serviceObject);
+            markers[recursive]._animate(toShow);
         });
 
 

@@ -99,18 +99,23 @@ class InicialController < ApplicationController
   end
 
   def destroylocal
-    @local = Receiver.find_by_token(params[:deletetoken])
-    if params[:deletetoken] == @local.token
-      @local.destroy
-      @notice = 'Local deletado com sucesso!'
+    if params[:deletetoken].nil?
+      puts params[:deletetoken]
+
     else
-      @notice =  'Token Inválido'
+      @local = Receiver.find_by_token(params[:deletetoken])
+      if !@local.nil?
+        noticedelete = 'Parâmetros inválidos!'
+        @local.destroy
+        noticedelete = 'Local deletado com sucesso!'
+      else
+        noticedelete = 'Local não existe!'
+      end
     end
 
-
     respond_to do |format|
-      format.html  { redirect_to root_url }
-      format.js
+      flash[:notice] = noticedelete
+      format.html  { render :action => 'index' }
     end
   end
 
