@@ -26,7 +26,7 @@ class InicialController < ApplicationController
         format.js
       else
         @notice = 'Erro!!'
-        format.html
+        format.html ( render 'shared/error_messages', :local => {@Receiver => @Receiver})
         format.js
       end
     end
@@ -55,26 +55,26 @@ class InicialController < ApplicationController
                      })
       marker.json(address)
     end
-    hash = JSON.parse(@receiving)
-    hash.each do |item|
-      item['distance'] = Geocoder::Calculations.distance_between(@useraddress,[item["lat"],item["lng"]])/1.609344
-    end
-
-    @receiving = hash
-
     if @receiving == '[]'
       @alert = 'Desculpe! Sem entradas para o pesquisado!'
-    end
+    else
+      hash = JSON.parse(@receiving)
+      hash.each do |item|
+        item['distance'] = Geocoder::Calculations.distance_between(@useraddress,[item["lat"],item["lng"]])/1.609344
+      end
 
-    #Adding user marker to Gmaps4Rails Marker
+      @receiving = hash
 
-    @receiving = JSON(hash.push(usermarkhash))
+      #Adding user marker to Gmaps4Rails Marker
 
-    #Responding to JSON request.
+      @receiving = JSON(hash.push(usermarkhash))
 
-    respond_to do |format|
-      format.json { render json: @receiving }
-      format.js
+      #Responding to JSON request.
+
+      respond_to do |format|
+        format.json { render json: @receiving }
+        format.js
+      end
     end
   end
 

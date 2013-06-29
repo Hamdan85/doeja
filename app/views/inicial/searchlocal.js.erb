@@ -1,4 +1,4 @@
-<% if !@alert.nil? %>
+<% if @alert %>
     flash_notice('<%= escape_javascript(@alert) %>');
 <% end %>
 
@@ -9,11 +9,8 @@ Gmaps.map.listen_to_markers = function(markers){
     } else {
         Gmaps.map.adjustMapToBounds();
     }
-
-
-
-    addlisteners(markers, 0);
     bounceNearest(markers);
+    addlisteners(markers, 0);
 }
 
 function toggleBounce(marker) {
@@ -45,19 +42,22 @@ function addlisteners(markers,recursive) {
 }
 
 function bounceNearest(markers) {
-    var mMarker = 0;
-    var distMarker = 9999999999999;
-    for (i=0; i<(markers.lenght-1); i++) {
-        if (marker.distance < distMarker) {
-            mMarker = i;
-            distMarker = marker.distance
+    if (markers.length > 1 ) {
+        var mMarker = 0;
+        var distMarker = 9999999999999;
+        for (i=0; i<(markers.lenght-1); i++) {
+            if (marker.distance < distMarker) {
+                mMarker = i;
+                distMarker = marker.distance
+            }
         }
-    }
-    Gmaps.map.markers[mMarker].picture = '/assets/rmarker.png'
-    toggleBounce(Gmaps.map.markers[mMarker]);
-    google.maps.event.addListener(Gmaps.map.markers[mMarker].serviceObject, 'mouseOver', function () {
+        Gmaps.map.markers[mMarker].picture = '/assets/rmarker.png'
+        Gmaps.map.callback();
         toggleBounce(Gmaps.map.markers[mMarker]);
-    });
+        google.maps.event.addListener(Gmaps.map.markers[mMarker].serviceObject, 'mouseOver', function () {
+            toggleBounce(Gmaps.map.markers[mMarker]);
+        });
+    }
 }
 
 

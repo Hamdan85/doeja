@@ -13,6 +13,7 @@ class Receiver < ActiveRecord::Base
   validates :token, :presence => true, :uniqueness => true
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :email, presence: true, format: { with: VALID_EMAIL_REGEX }
+  validates :phone, :presence => true
 
   #def createtokenfordelete
   #  self.token = SecureRandom.urlsafe_base64

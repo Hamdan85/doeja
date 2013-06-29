@@ -1,7 +1,9 @@
 <h3>Tipo: <%= address.kind %></h3>
 <h1>Nome: <%= address.name %></h1>
 <h1>Endereço:
-<%= address.address %></h1>
+<%= "#{address.address.split(',')[0]}, #{address.address.split(',')[1]}" %></h1>
+<%= address.address.split(',')[2] %></h1>
+<%= address.address.split(',')[3] %></h1>
 
 <h1>Recebendo: <%= address.receiving %></h1>
 <h1>Descrição: </br>
