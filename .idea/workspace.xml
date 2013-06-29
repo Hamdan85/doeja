@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/receiver.css.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/inicial/destroylocal.js.erb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/flash_notice.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/flash_notice.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_mapbox.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_mapbox.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/gmaps4rails/gmaps4rails.googlemaps.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/gmaps4rails/gmaps4rails.googlemaps.js.coffee" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/inicial_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/inicial_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/receiver.rb" afterPath="$PROJECT_DIR$/app/models/receiver.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/inicial/searchlocal.js.erb" afterPath="$PROJECT_DIR$/app/views/inicial/searchlocal.js.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -19,7 +16,7 @@
     <file path="/development.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1370143162636" ignored="false" />
     <file path="/a.dummy" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372223479711" ignored="false" />
     <file path="/_receive.html.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372224510425" ignored="false" />
-    <file path="/inicial_controller.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372461618368" ignored="false" />
+    <file path="/inicial_controller.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372470580210" ignored="false" />
     <file path="/receiver_controller.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1370198177067" ignored="false" />
     <file path="/receiver.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372438167671" ignored="false" />
     <file path="/geocoder.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372113970509" ignored="false" />
@@ -30,14 +27,14 @@
     <file path="/gmapsvar.js" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372385081987" ignored="false" />
     <file path="/searchplace.js" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372220995774" ignored="false" />
     <file path="/_donate.html.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372220386761" ignored="false" />
-    <file path="/_mapbox.html.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372386454142" ignored="false" />
+    <file path="/_mapbox.html.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372469644687" ignored="false" />
     <file path="/_map.html.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372382047900" ignored="false" />
     <file path="/viewscript.js" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372226768049" ignored="false" />
     <file path="$PROJECT_DIR$/../gmapsexample/Gemfile" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371008524827" ignored="false" />
     <file path="/fla_not.js.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371179166668" ignored="false" />
     <file path="/flash_notice.js" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371349773666" ignored="false" />
     <file path="/create.js.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371350786644" ignored="false" />
-    <file path="/searchlocal.js.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372450716151" ignored="false" />
+    <file path="/searchlocal.js.erb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1372472217605" ignored="false" />
     <file path="/centerplace.js" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371350338577" ignored="false" />
     <file path="/20130602040344_create_receivers.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371600590456" ignored="false" />
     <file path="/application.rb" changelist="7e0bc6b0-a88e-432f-87bb-d489af4d1c45" time="1371603503179" ignored="false" />
@@ -73,46 +70,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="inicial_controller.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/inicial_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="107" column="44" selection-start="2875" selection-end="2875" vertical-scroll-proportion="0.47916666">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="44" selection-start="388" selection-end="388" vertical-scroll-proportion="-11.25">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="searchlocal.js.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/inicial/searchlocal.js.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="48" selection-start="700" selection-end="700" vertical-scroll-proportion="-11.875">
+            <state line="55" column="61" selection-start="1566" selection-end="1566" vertical-scroll-proportion="-34.375">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="flash_notice.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/flash_notice.js">
+      <file leaf-file-name="gmaps4rails.googlemaps.js.coffee" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/gmaps4rails/gmaps4rails.googlemaps.js.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="34" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="496" column="13" selection-start="9271" selection-end="9274" vertical-scroll-proportion="0.0">
+            <state line="17" column="32" selection-start="689" selection-end="689" vertical-scroll-proportion="-8.218085">
               <folding />
             </state>
           </provider>
@@ -136,22 +106,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/app/views/shared/_map.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/gmapsvar.js" />
-        <option value="$PROJECT_DIR$/app/views/shared/_mapbox.html.erb" />
         <option value="$PROJECT_DIR$/app/views/shared/_autocompletebox.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/autocomplete-rails.js" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/user_registration/userRegister.html.erb" />
         <option value="$PROJECT_DIR$/app/mailers/user_registration.rb" />
-        <option value="$PROJECT_DIR$/app/views/inicial/searchlocal.js.erb" />
         <option value="$PROJECT_DIR$/app/models/receiver.rb" />
         <option value="$PROJECT_DIR$/app/views/inicial/destroylocal.js.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/flash_notice.js" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/style.css" />
+        <option value="$PROJECT_DIR$/app/views/shared/_mapbox.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/inicial_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/inicial/searchlocal.js.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/gmaps4rails/gmaps4rails.googlemaps.js.coffee" />
       </list>
     </option>
   </component>
@@ -259,6 +229,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doeja" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doeja" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shared" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -391,8 +383,26 @@
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
+              <option name="myItemId" value="doeja" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doeja" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -411,6 +421,14 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gmaps4rails" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -755,11 +773,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3276923" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3173516" sideWeight="0.7276923" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3173516" sideWeight="0.64153844" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35185185" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2723077" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35846153" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -833,20 +851,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130619041250_add_compl_to_receiver.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130628131138_add_token_to_receiver.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20130602040344_create_receivers.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -908,9 +912,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="44" selection-start="388" selection-end="388" vertical-scroll-proportion="0.6413302">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/flash_notice.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="34" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0">
+        <state line="9" column="34" selection-start="483" selection-end="483" vertical-scroll-proportion="0.30337077">
           <folding />
         </state>
       </provider>
@@ -922,23 +933,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/inicial/searchlocal.js.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_mapbox.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="48" selection-start="700" selection-end="700" vertical-scroll-proportion="-11.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="44" selection-start="388" selection-end="388" vertical-scroll-proportion="-11.25">
+        <state line="10" column="146" selection-start="319" selection-end="437" vertical-scroll-proportion="0.42613637">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/inicial_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="44" selection-start="2875" selection-end="2875" vertical-scroll-proportion="0.47916666">
+        <state line="70" column="46" selection-start="2151" selection-end="2151" vertical-scroll-proportion="0.69148934">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/inicial/searchlocal.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="61" selection-start="1566" selection-end="1566" vertical-scroll-proportion="-34.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/gmaps4rails/gmaps4rails.googlemaps.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="32" selection-start="689" selection-end="689" vertical-scroll-proportion="-8.218085">
           <folding />
         </state>
       </provider>

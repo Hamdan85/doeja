@@ -8,4 +8,5 @@
   <%= address.description %></h1>
 <h1>Telefone: <%= address.phone %></h1>
 <h1>E-mail: <%= address.email %></h1>
+<h1>Distância até você: <%= number_with_precision(Geocoder::Calculations.distance_between(@useraddress,address.address)/1.609344, :precision => 2) %>Km</h1>
 </br>

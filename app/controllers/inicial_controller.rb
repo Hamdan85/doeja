@@ -55,6 +55,12 @@ class InicialController < ApplicationController
                      })
       marker.json(address)
     end
+    hash = JSON.parse(@receiving)
+    hash.each do |item|
+      item['distance'] = Geocoder::Calculations.distance_between(@useraddress,[item["lat"],item["lng"]])/1.609344
+    end
+
+    @receiving = hash
 
     if @receiving == '[]'
       @alert = 'Desculpe! Sem entradas para o pesquisado!'
@@ -62,7 +68,7 @@ class InicialController < ApplicationController
 
     #Adding user marker to Gmaps4Rails Marker
 
-    @receiving = JSON(JSON.parse(@receiving).push(usermarkhash))
+    @receiving = JSON(hash.push(usermarkhash))
 
     #Responding to JSON request.
 
