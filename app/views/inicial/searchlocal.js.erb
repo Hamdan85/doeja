@@ -60,7 +60,7 @@ function bounceNearest(markers) {
     }
 }
 
-
+clearFields();
 var new_markers = <%= raw @receiving  %>;
 setTimeout(function () {
     Gmaps.map.replaceMarkers(new_markers);

@@ -66,6 +66,7 @@ function disableOther( button ) {
     if( button !== 'showRightPush' ) {
         classie.toggle( showRightPush, 'disabled' );
     }
+    clearFields();
 }
 
 function doeJa(){
@@ -147,5 +148,11 @@ function clearFields() {
     $('#esq-1').val("");
     $('#esq-2').val("");
     $('#esq-3').val("");
-    flash_notice('Limpando campos...');
+    $('#Donate_receiving').val("");
+    $('#receiver_receiving').val("");
+    $('#description').val("");
+    $('#phone').val("");
+    $('#email').val("");
+    $('#name').val("");
+    //flash_notice('Limpando campos...');
 }

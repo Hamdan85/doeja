@@ -8,7 +8,7 @@
       <fieldset>
         <label>VOCÊ É</label>
         <%= f.select(:kind, options_for_select([['Pessoa Física', 1], ['Pessoa Jurídica', 2], ['ONG', 3], ['Centro Religioso', 4]])) %>
-        <%= f.text_field :name, :class => 'dir', :placeholder => 'Nome' %><br />
+        <%= f.text_field :name, :class => 'dir', :placeholder => 'Nome', :id => 'name' %><br />
         <label>ONDE VOCÊ ESTÁ?</label>
         <!--<label style="font-size:0.8em;">Descobrir Automaticamente?</label>
         <input class="dir" style="float:right; margin:-24px -70px 0 0; height:13px;" type="checkbox"><br />
@@ -24,9 +24,9 @@
       <%= render :partial => '/shared/autocompletebox', :locals => {:f => f, :placeholder => 'Recebendo...' }  %>
       <small class="exemplo1">Ex: Roupas, dinheiro, amor...</small>
       <label>DESCREVA SEUS TRABALHOS</label>
-      <%= f.text_area :description, :placeholder => 'Breve descrição...' %><br />
-      <%= f.text_field :phone, :class => 'dir', :placeholder => 'Telefone' %><br />
-      <%= f.text_field :email, :class => 'dir', :placeholder => 'Email' %><br />
+      <%= f.text_area :description, :placeholder => 'Breve descrição...', :id => 'description' %><br />
+      <%= f.text_field :phone, :class => 'dir', :placeholder => 'Telefone', :id => 'phone' %><br />
+      <%= f.text_field :email, :class => 'dir', :placeholder => 'Email', :id => 'email' %><br />
     </fieldset>
 
     <fieldset>
