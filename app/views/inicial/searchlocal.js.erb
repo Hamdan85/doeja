@@ -62,7 +62,7 @@ function bounceNearest(markers) {
 
 clearFields();
 var new_markers = <%= raw @receiving  %>;
-new_markers[new_markers.length-1]["labelAnchor"] = new google.maps.Point(22, 0);
+
 setTimeout(function () {
     Gmaps.map.replaceMarkers(new_markers);
     Gmaps.map.listen_to_markers(new_markers);

@@ -11,25 +11,39 @@ class InicialController < ApplicationController
   end
 
   def create
-    @Receiver = Receiver.new(params[:receiver])
-    @Receiver.token = loop do
-      random_token = SecureRandom.urlsafe_base64
-      break random_token unless Receiver.where(token: random_token).exists?
-    end
-    @Receiver.save!
-
-    respond_to do |format|
-      if @Receiver.save
-        UserRegistration.userRegister(@Receiver).deliver
-        @notice = 'Local salvo com sucesso. Muito Obrigado!!'
-        format.html
+    if params[:receiver][:address].empty? or params[:receiver][:city].empty?
+      @alert = 'Endereço Inválido!'
+      flash[@alert]
+      respond_to do |format|
         format.js
-      else
-        @notice = 'Erro!!'
-        format.html ( render 'shared/error_messages', :local => {@Receiver => @Receiver})
-        format.js
+        format.json { render json: @alert }
       end
+    else
+      @Receiver = Receiver.new(params[:receiver])
+      @Receiver.token = loop do
+        random_token = SecureRandom.urlsafe_base64
+        break random_token unless Receiver.where(token: random_token).exists?
+      end
+
+      respond_to do |format|
+        if @Receiver.save
+          UserRegistration.userRegister(@Receiver).deliver
+          @alert = 'Local salvo com sucesso. Muito Obrigado!!'
+          format.html
+          format.js
+        else
+          @Receiver.errors.to_a.each do |item|
+            @errors = "#{@errors} \n + #{item}".to_s
+          end
+          puts @errors
+
+          format.html
+          format.js
+        end
+      end
+
     end
+
   end
 
   def searchlocal
@@ -50,9 +64,6 @@ class InicialController < ApplicationController
                       :picture => '/assets/user.png',
                       :height => 64,
                       :width => 64,
-                      :labelContent => 'Você está aqui',
-                      :labelClass => 'labels',
-                      :labelStyle => { :opacity => 0.75 },
                       :lat => userlocation[0],
                       :lng => userlocation[1]
       }

@@ -16,11 +16,7 @@
     <%= yield %>
 
     <%= javascript_include_tag "application" %>
-    <script>
-        <% if flash[:notice] %>
-            flash_notice('<%= flash[:notice] %>');
-        <% end %>
-    </script>
+
 
     <%= yield :scripts %>
 

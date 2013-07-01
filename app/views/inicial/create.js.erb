@@ -1,11 +1,19 @@
-classie.toggle( showRightPush, 'active' );
-classie.toggle( body, 'cbp-spmenu-push-toleft' );
-classie.toggle( menuRight, 'cbp-spmenu-open' );
+<% if @errors %>
+var erro = '<%= escape_javascript(@errors) %>';
+    for (var i = 0; i < erro.length; i++) {
+        erro = erro.replace("+", "\n");
+    }
+    flash_notice(erro);
+<%else%>
+    classie.toggle( showRightPush, 'active' );
+    classie.toggle( body, 'cbp-spmenu-push-toleft' );
+    classie.toggle( menuRight, 'cbp-spmenu-open' );
 
-disableOther( 'showRightPush' );
+    disableOther( 'showRightPush' );
 
-classie.removeClass( sumir, 'move1');
-classie.removeClass( infobox, 'sumir');
-classie.removeClass( header, 'header1');
+    classie.removeClass( sumir, 'move1');
+    classie.removeClass( infobox, 'sumir');
+    classie.removeClass( header, 'header1');
 
-flash_notice('<%= escape_javascript(@notice) %>');
+    flash_notice('<%= escape_javascript(@alert) %>');
+<% end %>
