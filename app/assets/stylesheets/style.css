@@ -562,3 +562,15 @@ select{
     color: #A9A9A9;
     font-size: 18px;
 }
+
+.labels {
+    color: dodgerblue;
+    background-color: white;
+    font-family: "Lucida Grande", "Arial", sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    width: 60px;
+    border: 2px mediumblue;
+    white-space: nowrap;
+}

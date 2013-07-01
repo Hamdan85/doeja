@@ -39,10 +39,30 @@ class InicialController < ApplicationController
     @useraddress = "#{params[:Donate][:address]}, #{params[:Donate][:neighborhood]}, #{params[:Donate][:city]}"
 
     userlocation = Geocoder.coordinates(@useraddress)
+    puts userlocation
 
     #Assembling the JSON Hash of user's Marker
 
-    usermarkhash = {:title => 'Você', :description => 'Você está aqui!', :animation => 'BOUNCE', :picture => '/assets/user.png', :height => 64, :width => 64, :lat => userlocation[0], :lng => userlocation[1]}
+    if userlocation
+      usermarkhash = {:title => 'Você',
+                      :description => 'Você está aqui!',
+                      :animation => 'BOUNCE',
+                      :picture => '/assets/user.png',
+                      :height => 64,
+                      :width => 64,
+                      :labelContent => 'Você está aqui',
+                      :labelClass => 'labels',
+                      :labelStyle => { :opacity => 0.75 },
+                      :lat => userlocation[0],
+                      :lng => userlocation[1]
+      }
+    else
+      @alert = 'Desculpe-nos, um erro aconteceu. Tente novamente.'
+      respond_to do |format|
+
+        format.js
+      end
+    end
 
     #Looking for near place to receive the donation
 

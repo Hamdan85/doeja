@@ -45,14 +45,14 @@ function bounceNearest(markers) {
     if (markers.length > 1 ) {
         var mMarker = 0;
         var distMarker = 9999999999999;
-        for (i=0; i<(markers.lenght-1); i++) {
-            if (marker.distance < distMarker) {
+        for (i=0; i<(markers.length-1); i++) {
+            if (markers[i].distance < distMarker) {
                 mMarker = i;
-                distMarker = marker.distance
+                distMarker = markers[i].distance
             }
         }
-        Gmaps.map.markers[mMarker].picture = '/assets/rmarker.png'
-        Gmaps.map.callback();
+        Gmaps.map.markers[mMarker].serviceObject.setIcon('/assets/rmarker.png');
+
         toggleBounce(Gmaps.map.markers[mMarker]);
         google.maps.event.addListener(Gmaps.map.markers[mMarker].serviceObject, 'mouseOver', function () {
             toggleBounce(Gmaps.map.markers[mMarker]);
@@ -62,8 +62,9 @@ function bounceNearest(markers) {
 
 clearFields();
 var new_markers = <%= raw @receiving  %>;
+new_markers[new_markers.length-1]["labelAnchor"] = new google.maps.Point(22, 0);
 setTimeout(function () {
     Gmaps.map.replaceMarkers(new_markers);
     Gmaps.map.listen_to_markers(new_markers);
-}, 200);
+}, 500);
 

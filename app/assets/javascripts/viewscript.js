@@ -141,6 +141,11 @@ $('#dir-3').change(function(){
 $("#registro").formToWizard();
 
 function clearFields() {
+    fulladdress = "";
+    City = "";
+    Street = "";
+    Number = "";
+    Neighborhood = "";
     Gmaps.map.clearMarkers(Gmaps.map.markers);
     $('#dir-1').val("");
     $('#dir-2').val("");
