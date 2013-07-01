@@ -1,6 +1,6 @@
 # -*- encoding : utf-8 -*-
 class UserRegistration < ActionMailer::Base
-  default from: "ghamdan.eng@gmail.com"
+  default from: "\"Registro Doe Já\" <registro@doeja.com>"
 
   def userRegister(user)
     @user = user

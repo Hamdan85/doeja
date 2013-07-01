@@ -59,14 +59,15 @@ Doeja::Application.configure do
   # config.action_mailer.raise_delivery_errors = false
 
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
-      address:              'smtp.gmail.com',
-      port:                 587,
-      domain:               'gmail.com',
-      user_name:            'ghamdan.eng@gmail.com',
-      password:             'Takalinda1985',
-      authentication:       'plain',
-      enable_starttls_auto: true  }
+  ActionMailer::Base.smtp_settings = {
+      :user_name => 'app15486024@heroku.com',
+      :password => 'ffj4a9jr',
+      :domain => 'doeja.com',
+      :address => 'smtp.sendgrid.net',
+      :port => 587,
+      :authentication => :plain,
+      :enable_starttls_auto => true
+  }
 
   # Enable threaded mode
   # config.threadsafe!
