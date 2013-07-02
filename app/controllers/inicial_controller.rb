@@ -53,7 +53,6 @@ class InicialController < ApplicationController
     @useraddress = "#{params[:Donate][:address]}, #{params[:Donate][:neighborhood]}, #{params[:Donate][:city]}"
 
     userlocation = Geocoder.coordinates(@useraddress)
-    puts userlocation
 
     #Assembling the JSON Hash of user's Marker
 
@@ -91,7 +90,7 @@ class InicialController < ApplicationController
     else
       hash = JSON.parse(@receiving)
       hash.each do |item|
-        item['distance'] = Geocoder::Calculations.distance_between(@useraddress,[item["lat"],item["lng"]])/1.609344
+        item['distance'] = Geocoder::Calculations.distance_between([userlocation[0],userlocation[1]],[item["lat"],item["lng"]])/1.609344
       end
 
       @receiving = hash
