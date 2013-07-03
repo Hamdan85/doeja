@@ -50,7 +50,7 @@ class Receiver < ActiveRecord::Base
 
   acts_as_gmappable :normalized_address => :address,
                     :process_geocoding => :geocode?,
-                    :msg => "Desculpe! Seu endereço não foi encontrado. Confira e tente novamente.magic_encode"
+                    :msg => "Desculpe! Seu endereço não foi encontrado. Confira e tente novamente"
 
   def geocode?
     (!address.blank? && (latitude.blank? || longitude.blank?)) || address_changed?

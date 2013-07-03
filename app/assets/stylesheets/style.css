@@ -575,7 +575,7 @@ select{
     white-space: nowrap;
 }
 
-#errorwindow{
+#errorswindow{
     position: absolute;
     top:130px;
     left:38%;

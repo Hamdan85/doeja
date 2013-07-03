@@ -1,22 +1,11 @@
-var html = <%= raw @rendererrors %>
-alert(html);
-document.getElementById("errors").innerHTML =  html;
+var codehtml = '<%= escape_javascript(render :partial => 'shared/error_messages' )  %>';
+var ew = document.getElementById('errors');
+
+ew.innerHTML = codehtml;
 
 $(function() {
-    // run the currently selected effect
-    function runEffect() {
-        // get effect type from
-        var selectedEffect = "Drop";
-
-        // run the effect
-        $( "#errorwindow" ).show( selectedEffect, options, 500, callback );
-    };
-
-    //callback function to bring a hidden box back
-    function callback() {
-        setTimeout(function() {
-            $( "#errorwindow:visible" ).removeAttr( "style" ).fadeOut();
-        }, 1000 );
-    };
-    runEffect();
+$("#errors").dialog({width: 400}, {draggable: false}, {resizable:false},{ buttons: [ { text: "Ok", click: function() {
+    $( this ).dialog( "close" );
+    ew.innerHTML = "";
+} } ] } );
 });

@@ -11,14 +11,7 @@ class InicialController < ApplicationController
   end
 
   def create
-    if params[:receiver][:address].empty? or params[:receiver][:city].empty?
-      @alert = 'Endereço Inválido!'
-      flash[@alert]
-      respond_to do |format|
-        format.js
-        format.json { render json: @alert }
-      end
-    else
+
       @Receiver = Receiver.new(params[:receiver])
       @Receiver.token = loop do
         random_token = SecureRandom.urlsafe_base64
@@ -35,12 +28,10 @@ class InicialController < ApplicationController
           @Receiver.errors.to_a.each do |item|
             @errors = "#{@errors} \n + #{item}".to_s
           end
-          @rendererrors = render_to_string( :partial => 'shared/error_messages' )
           format.js { render 'inicial/createerror' }
         end
-      end
 
-    end
+      end
 
   end
 
