@@ -1,10 +1,7 @@
-<% if @Receiver.respond_to?('errors') %>
-    <script>
-        $(function() {
-            $( "#dialog" ).dialog();
-        });
-    </script>
-    <div id="dialog" title="Basic dialog">
+<% if @Receiver.errors.any? %>
+    <div class="errorwindow" >
+      <h1>Encontrados Erros:</h1>
+      </br>
       <ul>
         <% @Receiver.errors.full_messages.each do |msg| %>
             <li><%= msg %></li>

@@ -1,0 +1,22 @@
+var html = <%= raw @rendererrors %>
+alert(html);
+document.getElementById("errors").innerHTML =  html;
+
+$(function() {
+    // run the currently selected effect
+    function runEffect() {
+        // get effect type from
+        var selectedEffect = "Drop";
+
+        // run the effect
+        $( "#errorwindow" ).show( selectedEffect, options, 500, callback );
+    };
+
+    //callback function to bring a hidden box back
+    function callback() {
+        setTimeout(function() {
+            $( "#errorwindow:visible" ).removeAttr( "style" ).fadeOut();
+        }, 1000 );
+    };
+    runEffect();
+});

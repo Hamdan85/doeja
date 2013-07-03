@@ -9,8 +9,6 @@
 </head>
 <body>
 
-<%= render 'shared/error_messages' %>
-
     <%= render 'shared/map' %>
 
     <%= yield %>
@@ -19,6 +17,8 @@
 
 
     <%= yield :scripts %>
+
+    <div id='errors'></div>
 
 </body>
 </html>

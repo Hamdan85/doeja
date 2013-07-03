@@ -35,10 +35,8 @@ class InicialController < ApplicationController
           @Receiver.errors.to_a.each do |item|
             @errors = "#{@errors} \n + #{item}".to_s
           end
-          puts @errors
-
-          format.html
-          format.js
+          @rendererrors = render_to_string( :partial => 'shared/error_messages' )
+          format.js { render 'inicial/createerror' }
         end
       end
 
