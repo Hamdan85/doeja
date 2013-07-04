@@ -597,3 +597,7 @@ select{
     font-size: 20pt;
 
 }
+
+#cbp-spmenu-s4 h3 {
+    box-shadow: none !important;
+}

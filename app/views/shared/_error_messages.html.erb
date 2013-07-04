@@ -1,7 +1,5 @@
 <% if @Receiver.errors.any? %>
     <div class="errorswindow" >
-      <h1>Encontrados Erros:</h1>
-      </br>
       <ul>
         <% @Receiver.errors.full_messages.each do |msg| %>
             <li><%= msg %></li>
