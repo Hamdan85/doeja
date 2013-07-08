@@ -601,3 +601,48 @@ select{
 #cbp-spmenu-s4 h3 {
     box-shadow: none !important;
 }
+
+.pac-container{
+    background-color:#fff;
+    border:1px solid #ccc;
+    overflow:hidden;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding-top: 5px!important;
+    position:fixed !important;
+
+    z-index: 1001 !important;
+    width: 400px !important;
+    box-shadow: 0px 2px 5px #366ea9;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    font-family: '4', sans-serif;
+    opacity: .8;
+}
+.pac-container:after{
+    padding-top:3px;
+    text-align:right;
+    display:block;
+    font-size:0
+}
+.pac-item{
+    cursor:pointer;
+    padding:0 4px;
+    text-overflow:ellipsis;
+    white-space:nowrap
+}
+.pac-item:hover{
+    background-color: #4c9cf1
+}
+.pac-selected{
+    background-color: #366ea9
+}
+.pac-placeholder{
+    color:gray
+}
+.pac-container:after  {
+!important
+}
