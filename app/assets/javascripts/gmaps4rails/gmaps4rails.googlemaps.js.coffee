@@ -337,3 +337,6 @@ class @Gmaps4RailsGoogle extends Gmaps4Rails
       @serviceObject.setCenter(map_center)
     else
       @fitBounds()
+
+
+

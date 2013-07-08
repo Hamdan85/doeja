@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Doe Já</title>
+
   <%= stylesheet_link_tag    "application", :media => "all" %>
 
 
@@ -17,6 +18,10 @@
 
 
     <%= yield :scripts %>
+    <script>
+        var input = document.getElementById('placesautocomplete');
+        var autocomplete = new google.maps.places.Autocomplete(input);
+    </script>
 
     <div id='errors' title="Erros Encontrados"></div>
 

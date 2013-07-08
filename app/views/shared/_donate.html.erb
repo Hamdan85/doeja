@@ -4,11 +4,7 @@
   <%= form_for(:Donate, :url => { :action => 'searchlocal', :controller => :inicial }, :remote => true ) do |f| %> <!-- <form id="registro"> -->
     <label>ONDE VOCÊ ESTÁ?</label>
 
-
-    <%= f.text_field :city, :class => 'esq', :id => 'esq-1', :placeholder => 'Cidade', :"data-field" => "city" %><br />
-    <%= f.text_field :address, :class => 'esq', :id => 'esq-2', :placeholder => 'Rua e Número', :"data-field" => "street" %><br />
-    <%= f.text_field :neighborhood, :class => 'esq', :id => 'esq-3', :placeholder => 'Bairro', :"data-field" => "neighborhood" %>
-
+    <%= render :partial => 'shared/placesautocomplete', :locals => {:f => f} %>
 
     <label>O QUE QUER DOAR?</label>
     <%= render :partial => '/shared/autocompletebox', :locals => {:f => f, :placeholder => 'Doando...'}  %>

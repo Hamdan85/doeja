@@ -13,10 +13,9 @@
         <!--<label style="font-size:0.8em;">Descobrir Automaticamente?</label>
         <input class="dir" style="float:right; margin:-24px -70px 0 0; height:13px;" type="checkbox"><br />
         <small id="exemplo2">Usamos Geolocalização do Google</small>-->
-        <%= f.text_field :city, :id => 'dir-1', :class => 'dir', :placeholder => 'Cidade' %><br />
-        <%= f.text_field :address, :id => 'dir-2', :class => 'dir', :placeholder => 'Rua e Número' %><br />
+        <%= render :partial => 'shared/placesautocomplete', :locals => {:f => f} %>
         <%= f.text_field :compl, :class => 'dir', :placeholder => 'Complemento' %>
-        <%= f.text_field :neighborhood, :id => 'dir-3', :class => 'dir', :placeholder => 'Bairro' %>
+
       </fieldset>
 
     <fieldset>

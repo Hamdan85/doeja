@@ -105,38 +105,11 @@ var Number = "";
 var Neighborhood = "";
 
 /* trigger mudança de campo. */
-$('#esq-1').change(function(){
-    City = document.getElementById('esq-1').value;
-    fulladdress = Street + ', ' + Number + ', ' + Neighborhood + ', ' + City;
-    getMapByGeoLocation(fulladdress);
+$('#placesautocomplete').keyup(function(){
+    if ( document.getElementById('placesautocomplete').value.length > 2 ) {
+        getMapByGeoLocation(document.getElementById('placesautocomplete').value);
+    }
 });
-$('#esq-2').change(function(){
-    Street = document.getElementById('esq-2').value;
-    fulladdress = Street + ', ' + Number + ', ' + Neighborhood + ', ' + City;
-    getMapByGeoLocation(fulladdress);
-});
-$('#esq-3').change(function(){
-    Neighborhood = document.getElementById('esq-3').value;
-    fulladdress = Street + ', ' + Number + ', ' + Neighborhood + ', ' + City;
-    getMapByGeoLocation(fulladdress);
-});
-
-$('#dir-1').change(function(){
-    City = document.getElementById('dir-1').value;
-    fulladdress = Street + ', ' + Number + ', ' + Neighborhood + ', ' + City;
-    getMapByGeoLocation(fulladdress);
-});
-$('#dir-2').change(function(){
-    Street = document.getElementById('dir-2').value;
-    fulladdress = Street + ', ' + Number + ', ' + Neighborhood + ', ' + City;
-    getMapByGeoLocation(fulladdress);
-});
-$('#dir-3').change(function(){
-    Neighborhood = document.getElementById('dir-3').value;
-    fulladdress = Street + ', ' + Number + ', ' + Neighborhood + ', ' + City;
-    getMapByGeoLocation(fulladdress);
-});
-
 
 $("#registro").formToWizard();
 
