@@ -66,7 +66,13 @@ class InicialController < ApplicationController
 
     hash = JSON.parse(@receiving)
     hash.each do |item|
-      item['distance'] = Geocoder::Calculations.distance_between([userlocation.latitude,userlocation.longitude],[item["lat"],item["lng"]])/1.609344
+
+      dlat = userlocation.latitude-item["lat"]
+      dlon = userlocation.longitude-item["lng"]
+      a =  (Math.sin(dlat/2))**2 + Math.cos(userlocation.latitude) * Math.cos(item["lat"]) * (Math.sin(dlon/2))**2
+      c = 2 * Math.atan2( Math.sqrt(a), Math.sqrt(1-a) )
+      item['distance'] = (3961 * c)/1.609344
+      #item['distance'] = Geocoder::Calculations.distance_between([userlocation.latitude,userlocation.longitude],[item["lat"],item["lng"]])/1.609344
     end
 
     @receiving = hash
