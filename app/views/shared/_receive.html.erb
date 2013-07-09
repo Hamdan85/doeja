@@ -3,7 +3,7 @@
   <div id="seta1" class="back-icon-div2"><a href="#" class="back-icon2" id="back-receber"></a></div>
   <label id="regis">SEJA ENCONTRADO</label>
 
-  <%= form_for(:receiver, :html => { :id => 'registro'}, :url => { :action => 'create', :controller => :inicial }, :remote => true ) do |f| %> <!-- <form id="registro"> -->
+  <%= form_for(:receiver, :html => { :id => 'registro', :onsubmit => 'loading(receive)'}, :url => { :action => 'create', :controller => :inicial }, :remote => true) do |f| %> <!-- <form id="registro"> -->
 
       <fieldset>
         <label>VOCÊ É</label>
@@ -13,7 +13,7 @@
         <!--<label style="font-size:0.8em;">Descobrir Automaticamente?</label>
         <input class="dir" style="float:right; margin:-24px -70px 0 0; height:13px;" type="checkbox"><br />
         <small id="exemplo2">Usamos Geolocalização do Google</small>-->
-        <%= render :partial => 'shared/placesautocomplete', :locals => {:f => f} %>
+        <%= render :partial => 'shared/placesautocomplete', :locals => {:f => f, :autocompleteid => 'autocompletedir'} %>
         <%= f.text_field :compl, :class => 'dir', :placeholder => 'Complemento' %>
 
       </fieldset>
@@ -30,7 +30,7 @@
 
     <fieldset>
       <label>Agora só falta</label>
-      <%= f.submit 'RECEBER', :class => 'botao' %>
+      <%= f.submit 'RECEBER', :class => 'botao', :id => 'receive' %>
     </fieldset>
 
   <% end %><!--</form>-->

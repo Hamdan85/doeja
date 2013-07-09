@@ -105,9 +105,14 @@ var Number = "";
 var Neighborhood = "";
 
 /* trigger mudança de campo. */
-$('#placesautocomplete').keyup(function(){
-    if ( document.getElementById('placesautocomplete').value.length > 2 ) {
-        getMapByGeoLocation(document.getElementById('placesautocomplete').value);
+$('#autocompleteesq').keyup(function(){
+    if ( document.getElementById('autocompleteesq').value.length > 2 ) {
+        getMapByGeoLocation(document.getElementById('autocompleteesq').value);
+    }
+});
+$('#autocompletedir').keyup(function(){
+    if ( document.getElementById('autocompletedir').value.length > 2 ) {
+        getMapByGeoLocation(document.getElementById('autocompletedir').value);
     }
 });
 
@@ -133,4 +138,10 @@ function clearFields() {
     $('#email').val("");
     $('#name').val("");
     //flash_notice('Limpando campos...');
+}
+
+function loading(button) {
+    //var ew = document.getElementById(button);
+
+    //ew.innerHTML += "<div class='loader'><span></span><span></span><span></span></div>"
 }

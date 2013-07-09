@@ -41,15 +41,16 @@ class InicialController < ApplicationController
 
     @useraddress = "#{params[:Donate][:address]}"
 
-    userlocation = Geocoder.search(@useraddress)
+    userlocation = Geocoder.search(@useraddress)[0]
+
 
     #Assembling the JSON Hash of user's Marker
 
-    usermarkhash = {:title => 'Você', :description => 'Você está aqui!', :animation => 'BOUNCE', :picture => '/assets/user.png', :height => 64, :width => 64, :lat => userlocation[0].coordinates[0], :lng => userlocation[0].coordinates[1]}
+    usermarkhash = {:title => 'Você', :description => 'Você está aqui!', :animation => 'BOUNCE', :picture => '/assets/user.png', :height => 64, :width => 64, :lat => userlocation.latitude, :lng => userlocation.longitude}
 
     #Looking for near place to receive the donation
 
-    @receiving = Receiver.where("lower(receiving) =? and lower(city) = ?", params[:Donate][:receiving].downcase,userlocation[0].city.downcase).to_gmaps4rails do |address, marker|
+    @receiving = Receiver.where("lower(receiving) =? and lower(city) = ?", params[:Donate][:receiving].downcase,userlocation.city.downcase).to_gmaps4rails do |address, marker|
       marker.infowindow render_to_string(:partial => '/shared/mapbox', :locals => { :address => address })
       marker.picture({
                          :picture => "/assets/bmarker.png",
@@ -58,16 +59,17 @@ class InicialController < ApplicationController
                      })
       marker.json(address)
     end
-    hash = JSON.parse(@receiving)
-    hash.each do |item|
-      item['distance'] = Geocoder::Calculations.distance_between(@useraddress,[item["lat"],item["lng"]])/1.609344
-    end
-
-    @receiving = hash
 
     if @receiving == '[]'
       @alert = 'Desculpe! Sem entradas para o pesquisado!'
     end
+
+    hash = JSON.parse(@receiving)
+    hash.each do |item|
+      item['distance'] = Geocoder::Calculations.distance_between([userlocation.latitude,userlocation.longitude],[item["lat"],item["lng"]])/1.609344
+    end
+
+    @receiving = hash
 
     #Adding user marker to Gmaps4Rails Marker
 

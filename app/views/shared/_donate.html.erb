@@ -1,15 +1,15 @@
 <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
   <h3>DOAR</h3>
   <div id="seta" class="back-icon-div"><a href="#" class="back-icon" id="back-doar"></a></div>
-  <%= form_for(:Donate, :url => { :action => 'searchlocal', :controller => :inicial }, :remote => true ) do |f| %> <!-- <form id="registro"> -->
+  <%= form_for(:Donate, :html => { :onsubmit => 'loading(donate)'}, :url => { :action => 'searchlocal', :controller => :inicial }, :remote => true ) do |f| %> <!-- <form id="registro"> -->
     <label>ONDE VOCÊ ESTÁ?</label>
 
-    <%= render :partial => 'shared/placesautocomplete', :locals => {:f => f} %>
+    <%= render :partial => 'shared/placesautocomplete', :locals => {:f => f, :autocompleteid => 'autocompleteesq'} %>
 
     <label>O QUE QUER DOAR?</label>
     <%= render :partial => '/shared/autocompletebox', :locals => {:f => f, :placeholder => 'Doando...'}  %>
     <small class="exemplo1">Ex: Roupas, dinheiro, amor...</small>
-    <%= f.submit :class => 'botao', :value => 'DOAR' %>
+    <%= f.submit :class => 'botao', :id => 'donate', :value => 'DOAR' %>
 
   <% end %>
 </nav>

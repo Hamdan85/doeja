@@ -19,8 +19,10 @@
 
     <%= yield :scripts %>
     <script>
-        var input = document.getElementById('placesautocomplete');
-        var autocomplete = new google.maps.places.Autocomplete(input);
+        var inputesq = document.getElementById('autocompleteesq');
+        var inputdir = document.getElementById('autocompletedir');
+        var autocompletedir = new google.maps.places.Autocomplete(inputesq);
+        var autocompleteesq = new google.maps.places.Autocomplete(inputdir);
     </script>
 
     <div id='errors' title="Erros Encontrados"></div>
