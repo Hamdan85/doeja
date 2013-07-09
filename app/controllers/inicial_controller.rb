@@ -51,13 +51,23 @@ class InicialController < ApplicationController
     #Looking for near place to receive the donation
 
     @receiving = Receiver.where("lower(receiving) =? and lower(city) = ?", params[:Donate][:receiving].downcase,userlocation.city.downcase).to_gmaps4rails do |address, marker|
-      marker.infowindow render_to_string(:partial => '/shared/mapbox', :locals => { :address => address })
+      #dlat = userlocation.latitude-address["latitude"]
+      #dlon = userlocation.longitude-address["longitude"]
+      #a =  (Math.sin(dlat/2))**2 + Math.cos(userlocation.latitude) * Math.cos(address["latitude"]) * (Math.sin(dlon/2))**2
+      #c = 2 * Math.atan2( Math.sqrt(a), Math.sqrt(1-a) )
+      #distance = (3961 * c)/1.609344
+
+      distance = Geocoder::Calculations.distance_between([userlocation.latitude,userlocation.longitude],[address["latitude"],address["longitude"]])/1.609344
+
+      marker.infowindow render_to_string(:partial => '/shared/mapbox', :locals => { :address => address, :distance => distance })
       marker.picture({
                          :picture => "/assets/bmarker.png",
                          :width   => 32,
                          :height  => 32
                      })
-      marker.json(address)
+      marker.json({ :distance => distance })
+
+
     end
 
     if @receiving == '[]'
@@ -67,12 +77,8 @@ class InicialController < ApplicationController
     hash = JSON.parse(@receiving)
     hash.each do |item|
 
-      dlat = userlocation.latitude-item["lat"]
-      dlon = userlocation.longitude-item["lng"]
-      a =  (Math.sin(dlat/2))**2 + Math.cos(userlocation.latitude) * Math.cos(item["lat"]) * (Math.sin(dlon/2))**2
-      c = 2 * Math.atan2( Math.sqrt(a), Math.sqrt(1-a) )
-      item['distance'] = (3961 * c)/1.609344
-      #item['distance'] = Geocoder::Calculations.distance_between([userlocation.latitude,userlocation.longitude],[item["lat"],item["lng"]])/1.609344
+
+      #item['distance'] = Geocoder::Calculations.distance_between([userlocation.latitude,userlocation.longitude],[address["latitude"],item["lng"]])/1.609344
     end
 
     @receiving = hash
