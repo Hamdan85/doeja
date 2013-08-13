@@ -105,15 +105,11 @@ var Number = "";
 var Neighborhood = "";
 
 /* trigger mudança de campo. */
-$('#autocompleteesq').keyup(function(){
-    if ( document.getElementById('autocompleteesq').value.length > 2 ) {
-        getMapByGeoLocation(document.getElementById('autocompleteesq').value);
-    }
+$('#autocompleteesq').blur(function(){
+    getMapByGeoLocation(document.getElementById('autocompleteesq').value);
 });
-$('#autocompletedir').keyup(function(){
-    if ( document.getElementById('autocompletedir').value.length > 2 ) {
-        getMapByGeoLocation(document.getElementById('autocompletedir').value);
-    }
+$('#autocompletedir').blur(function(){
+    getMapByGeoLocation(document.getElementById('autocompletedir').value);
 });
 
 $("#registro").formToWizard();

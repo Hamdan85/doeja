@@ -39,25 +39,33 @@ class InicialController < ApplicationController
 
     #Geocoding Users Address
 
-    @useraddress = "#{params[:Donate][:address]}"
+    require 'open-uri'
+    require 'json'
 
-    userlocation = Geocoder.search(@useraddress)[0]
+    @useraddress = "http://maps.googleapis.com/maps/api/geocode/json?address=#{params[:Donate][:address]}&sensor=true".gsub(' ', '+').to_s
 
+    json_object = open(@useraddress).read
+
+    userlocation = JSON.parse(json_object)["results"].first
+
+    #find city on Google's Json Response
+
+    city = ""
+
+    userlocation["address_components"].each do |ul|
+      if ul["types"] == [ "locality", "political" ]
+        city = ul["long_name"]
+      end
+    end
 
     #Assembling the JSON Hash of user's Marker
 
-    usermarkhash = {:title => 'Você', :description => 'Você está aqui!', :animation => 'BOUNCE', :picture => '/assets/user.png', :height => 64, :width => 64, :lat => userlocation.latitude, :lng => userlocation.longitude}
+    usermarkhash = {:title => 'Você', :description => 'Você está aqui!', :animation => 'BOUNCE', :picture => '/assets/user.png', :height => 64, :width => 64, :lat => userlocation["geometry"]["location"]["lat"], :lng => userlocation["geometry"]["location"]["lng"] }
 
     #Looking for near place to receive the donation
 
-    @receiving = Receiver.where("lower(receiving) =? and lower(city) = ?", params[:Donate][:receiving].downcase,userlocation.city.downcase).to_gmaps4rails do |address, marker|
-      #dlat = userlocation.latitude-address["latitude"]
-      #dlon = userlocation.longitude-address["longitude"]
-      #a =  (Math.sin(dlat/2))**2 + Math.cos(userlocation.latitude) * Math.cos(address["latitude"]) * (Math.sin(dlon/2))**2
-      #c = 2 * Math.atan2( Math.sqrt(a), Math.sqrt(1-a) )
-      #distance = (3961 * c)/1.609344
-
-      distance = Geocoder::Calculations.distance_between([userlocation.latitude,userlocation.longitude],[address["latitude"],address["longitude"]])/1.609344
+    @receiving = Receiver.where("lower(receiving) =? and lower(city) = ?", params[:Donate][:receiving].downcase,city.downcase).to_gmaps4rails do |address, marker|
+      distance = Geocoder::Calculations.distance_between([userlocation["geometry"]["location"]["lat"],userlocation["geometry"]["location"]["lng"]],[address["latitude"],address["longitude"]])/1.609344
 
       marker.infowindow render_to_string(:partial => '/shared/mapbox', :locals => { :address => address, :distance => distance })
       marker.picture({
@@ -66,8 +74,6 @@ class InicialController < ApplicationController
                          :height  => 32
                      })
       marker.json({ :distance => distance })
-
-
     end
 
     if @receiving == '[]'
@@ -77,8 +83,6 @@ class InicialController < ApplicationController
     hash = JSON.parse(@receiving)
     hash.each do |item|
 
-
-      #item['distance'] = Geocoder::Calculations.distance_between([userlocation.latitude,userlocation.longitude],[address["latitude"],item["lng"]])/1.609344
     end
 
     @receiving = hash

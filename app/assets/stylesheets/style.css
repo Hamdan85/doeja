@@ -102,8 +102,7 @@ iframe{
     margin: 0;
     font-weight: 300;
     background: #0d77b6;
-    box-shadow: 3px 0px 5px #999,
-    -3px 0px 5px #999;
+    box-shadow: none;
 }
 
 .cbp-spmenu label {
@@ -601,16 +600,16 @@ select{
 #cbp-spmenu-s4 h3 {
     box-shadow: none !important;
 }
-
 .pac-container{
     background-color:#fff;
+    width: 300px!important;
     border:1px solid #ccc;
     overflow:hidden;
     -webkit-border-radius: 5px;
     border-radius: 5px;
     padding-top: 5px!important;
     position:fixed !important;
-
+    font-size: 10pt !important;
     z-index: 1001 !important;
 
     box-shadow: 0px 2px 5px #366ea9;
@@ -620,7 +619,7 @@ select{
     -o-transition: all 1s ease;
     transition: all 1s ease;
     font-family: '4', sans-serif;
-    opacity: .8;
+    opacity: .9;
 }
 .pac-container:after{
     padding-top:3px;
@@ -696,8 +695,4 @@ select{
         opacity: 0.1;
         -moz-transform: translateY(-21px);
     }
-}
-.pac-container{
-
-    font-size: 10pt !important;
 }

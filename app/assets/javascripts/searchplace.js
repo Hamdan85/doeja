@@ -5,19 +5,20 @@ function getMapByGeoLocation(address) {
     var latlng = [];
 
     return latlng = setLatLng(address,function(lat,lng) {
-
         calcusermarkerhash(lat,lng);
-
     });
 
     function setLatLng (address, callback) {
-        geocoder.geocode( { 'address': address, 'region': 'br' }, function(results, status) {
-            if (status == google.maps.GeocoderStatus.OK) {
-                callback(results[0].geometry.location.lat(), results[0].geometry.location.lng());
-            } else {
-                result = "Unable to find address: " + status;
-            }
-        });
+        setTimeout(function() {
+            geocoder.geocode( { 'address': address, 'region': 'br' }, function(results, status) {
+                if (status == google.maps.GeocoderStatus.OK) {
+                    callback(results[0].geometry.location.lat(), results[0].geometry.location.lng());
+                } else {
+                    result = "Unable to find address: " + status;
+                }
+            });
+        },100);
+
     }
 
 
