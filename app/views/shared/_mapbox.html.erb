@@ -1,14 +1,16 @@
-<h3>Tipo: <%= address.kind %></h3>
-<h1>Nome: <%= address.name %></h1>
-<h1>Endereço:
-<%= "#{address.address.split(',')[0]}, #{address.address.split(',')[1]}" %></h1>
-<%= address.address.split(',')[2] %></h1>
-<%= address.address.split(',')[3] %></h1>
+<div class="mapstyle">
+  <h3>Tipo: <%= address.kind %></h3>
+  <h1>Nome: <%= address.name %></h1>
+  <h1>Endereço:
+    <%= "#{address.address.split(',')[0]}, #{address.address.split(',')[1]}" %></h1>
+  <%= address.address.split(',')[2] %></h1>
+  <%= address.address.split(',')[3] %></h1>
 
-<h1>Recebendo: <%= address.receiving %></h1>
-<h1>Descrição: </br>
-  <%= address.description %></h1>
-<h1>Telefone: <%= address.phone %></h1>
-<h1>E-mail: <%= address.email %></h1>
-<h1>Distância até você: <%= number_with_precision(distance, :precision => 2) %>Km</h1>
-</br>
+  <h1>Recebendo: <%= address.receiving %></h1>
+  <h1>Descrição: </br>
+    <%= address.description %></h1>
+  <h1>Telefone: <%= address.phone %></h1>
+  <h1>E-mail: <%= address.email %></h1>
+  <h1>Distância até você: <%= number_with_precision(distance, :precision => 2) %>Km</h1>
+  </br>
+</div>

@@ -73,5 +73,4 @@ class Receiver < ActiveRecord::Base
   def set_token
     self.token = generate_token { |token| self.class.find_by_token(token).nil? }
   end
-
 end

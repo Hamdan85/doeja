@@ -696,3 +696,9 @@ select{
         -moz-transform: translateY(-21px);
     }
 }
+
+/* Mapbox Style */
+.mapstyle !important {
+    border: 1px solid black;
+    border-radius: 15px;
+}
