@@ -4,17 +4,21 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
 </head>
 <body>
-<h1>Welcome to example.com, <%= @user.name %></h1>
+<div style="width: 100%;border-radius: 10px;background-color: #4c9cf1;color: white;text-align: left;font: helvetica;height: 40px; font-size: 45">DOE JÁ</div>
+<h1>Seja bem vindo ao DoeJa.com <%= @user.name %></h1>
 <p>
-    You have successfully signed up to example.com,
-    your username is: <%= @user.name %>.<br/>
-    para deletar seu local, clique <a href="http://www.doeja.com/deletarlocal?deletetoken=<%= @token %>">AQUI</a>.
+    Você registrou com sucesso o seu local de recepção de doações.
+    Ficamos felizes com sua contribuição.
+    <br/>
+    Caso posteriormente escolha não participar mais, clique no link a seguir para deletar seu local:
+    <br/>
+    <a href="http://www.doeja.com/deletarlocal?deletetoken=<%= @token %>">AQUI</a>.
 
+    Por isso, mantenha esse email até que o queira, mas esperamos que não =).
 
 </p>
 <p>
-    To login to the site, just follow this link: <%= @url %>.
 </p>
-<p>Thanks for joining and have a great day!</p>
+<p>Obrigado por participar e tenha um ótimo dia!</p>
 </body>
 </html>
