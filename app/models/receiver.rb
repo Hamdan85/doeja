@@ -24,7 +24,6 @@ class Receiver < ActiveRecord::Base
     address = self.address
 
     self.city = self.city.downcase
-    self.neighborhood = self.neighborhood.downcase
     self.receiving = self.receiving.downcase
 
     #Kind of Organization

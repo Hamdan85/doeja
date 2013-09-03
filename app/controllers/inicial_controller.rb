@@ -13,6 +13,11 @@ class InicialController < ApplicationController
   def create
 
     @Receiver = Receiver.new(params[:receiver])
+
+    @Receiver.city = Geocoder.search(@Receiver.as_json['address'])[0].city.downcase
+
+    @Receiver.neighborhood = Geocoder.search(@Receiver.as_json['address']).first.address_components[2]['long_name']
+
     @Receiver.token = loop do
       random_token = SecureRandom.urlsafe_base64
       break random_token unless Receiver.where(token: random_token).exists?
